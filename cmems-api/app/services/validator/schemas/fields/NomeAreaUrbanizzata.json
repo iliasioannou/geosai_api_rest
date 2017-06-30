@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NomeAreaUrbanizzata.json",
+	"title" : "NomeAreaUrbanizzata Schema",
+	"description" : "NomeAreaUrbanizzata Schema",
+
+	"definitions": {
+		"NomeAreaUrbanizzata": {
+			"type": "object",
+			"description" : "Inserire il nome della/e città, paese.",
+			"properties": {
+				"NomeAreaUrbanizzata": {
+					"type" : "string",
+					"description" : "Inserire il nome della/e città, paese."
+				}
+			},
+			"required": ["NomeAreaUrbanizzata"]
+		}
+	}
+
+}

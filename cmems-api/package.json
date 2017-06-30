@@ -1,0 +1,65 @@
+{
+  "name": "pkz019_SIC_Api_Rest",
+  "version": "1.0.0",
+  "description": "ISPRA - API rest",
+  "main": "server.js",
+  "engines": {
+    "node": "= 0.12.x || = 4.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --recursive ./test/**/*.js"
+  },
+  "keywords": [
+    "ISPRA",
+    "Water",
+    "Quality",
+    "Marine",
+    "Planetek"
+  ],
+  "author": "coletta@planetek.it",
+  "license": "SEE LICENSE IN license.txt",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "bookshelf": "^0.9.1",
+    "bookshelf-modelbase": "^2.10.1",
+    "chalk": "https://registry.npmjs.org/chalk/-/chalk-1.1.1.tgz",
+    "convert-excel-to-json": "^1.0.0",
+    "express": "^4.13.3",
+    "json-schema-ref-parser": "^3.1.2",
+    "json2xls": "^0.1.2",
+    "knex": "^0.9.0",
+    "moment": "https://registry.npmjs.org/moment/-/moment-2.11.1.tgz",
+    "node-json-transform": "^1.0.10",
+    "node-restify-validation": "^1.0.4",
+    "pg": "^4.4.3",
+    "pg-promise": "^5.3.5",
+    "restify": "^4.0.3",
+    "restify-namespace": "^0.1.1",
+    "restify-oauth2": "^4.0.4",
+    "restify-paginate": "0.0.4",
+    "restify-url-semver": "^1.0.0",
+    "validator": "https://registry.npmjs.org/validator/-/validator-4.5.0.tgz",
+    "winston": "^2.2.0",
+    "z-schema": "^3.18.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.14.0",
+    "grunt": "^0.4.5",
+    "grunt-apidoc": "^0.11.0",
+    "grunt-auto-install": "^0.3.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-execute": "^0.2.2",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-placeholder": "^1.0.6",
+    "grunt-sync": "^0.6.2",
+    "jshint": "^2.9.4",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.8.1"
+  }
+}

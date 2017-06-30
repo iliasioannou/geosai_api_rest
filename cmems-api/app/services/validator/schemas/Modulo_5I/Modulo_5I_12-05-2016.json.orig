@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_5I/Modulo_5I_12-05-2016.json",
+	"title" : "Modulo_5I_12-05-2016.xls",
+	"description" : "Lista di standard per Modulo_5I_12-05-2016.",
+
+	"type" : "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./app/schemas/Modulo_5I/Stazioni.json#/properties/Stazioni" },
+		"Contaminanti": { "$ref": "./app/schemas/Modulo_5I/Contaminanti.json#/properties/Contaminanti" }
+
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DO.json",
+	"title" : "DO Schema",
+	"description" : "DO Schema",
+
+	"definitions": {
+		"DO": {
+			"type": "object",
+			"description" : "Ossigeno disciolto - percentuale di saturazione (%).",
+			"properties": {
+				"DO": {
+					"type" : "string",
+					"description" : "Ossigeno disciolto - percentuale di saturazione (%).",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["DO"]
+		}
+	}
+
+}

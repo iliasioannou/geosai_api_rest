@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Macrozooplancton_ossTaxon.json",
+	"title" : "Macrozooplancton_ossTaxon Schema",
+	"description" : "Macrozooplancton_ossTaxon Schema",
+
+	"definitions": {
+		"Taxon": {
+			"type": "object",
+			"description" : "Genere specie della specie, inserire uno dei valori della lista presente nel foglio 'Lista_specie_mesozooplancton'",
+			"properties": {
+				"Taxon": {
+					"type" : "string",
+					"enum" : ["Aequorea","Aurelia","Charybdea","Chrysaora","Cotylorhiza","Drymonema","Mnemiopsis","Olindias","Pelagia benovici","Pelagia noctiluca","Phyllorhiza","Physalia","Porpita","Rhizostoma luteum","Rhizostoma pulmo","Rhopilema","Salpa","Velella","Altro"],
+					"description" : "Genere specie della specie, inserire uno dei valori della lista presente nel foglio 'Lista_specie_mesozooplancton'"
+				}
+			}
+		}
+	}
+
+}

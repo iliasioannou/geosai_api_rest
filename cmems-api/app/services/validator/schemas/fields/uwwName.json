@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/uwwName.json",
+	"title" : "uwwName Schema",
+	"description" : "uwwName Schema",
+
+	"definitions": {
+		"uwwName": {
+			"type": "object",
+			"description" : "Denominazione dell'impianto di depurazione come riportato nel Questionario UWWTD.",
+			"properties": {
+				"uwwName": {
+					"type" : "string",
+					"description" : "Denominazione dell'impianto di depurazione come riportato nel Questionario UWWTD."
+				}
+			},
+			"required": ["uwwName"]
+		}
+	}
+
+}

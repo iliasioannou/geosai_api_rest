@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CASNumber.json",
+	"title" : "CASNumber Schema",
+	"description" : "CASNumber Schema",
+
+	"definitions": {
+		"CASNumber": {
+			"type": "object",
+			"description" : "Numero CAS della sostanza contaminante, inserire uno dei valori della lista presente nel foglio 'Lista_contaminanti_acqua'.",
+			"properties": {
+				"CASNumber": {
+					"type" : "string",
+					"enum" : ["15972-60-8","85535-84-8","309-00-2","60-57-1","72-20-8","465-73-6","120-12-7","1912-24-9","71-43-2","7440-43-9","470-90-6","2921-88-2","50-29-3","107-06-2","75-09-2","117-81-7","32534-81-9","330-54-1","115-29-7","118-74-1","87-68-3","608-73-1","206-44-0","50-32-8","205-99-2","191-24-2","207-08-9","193-39-5","34123-59-6","7439-97-6","91-20-3","7440-02-0","84852-15-3","140-66-9","608-93-5","87-86-5","7439-92-1","122-34-9","56-23-5","127-18-4","79-01-6","36643-28-4","87-61-6","120-82-1","108-70-3","67-66-3","1582-09-8"],
+					"description" : "Numero CAS della sostanza contaminante, inserire uno dei valori della lista presente nel foglio 'Lista_contaminanti_acqua'."
+				}
+			},
+			"required": ["CASNumber"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/VolumeFiltrato.json",
+	"title" : "VolumeFiltrato Schema",
+	"description" : "VolumeFiltrato Schema",
+
+	"definitions": {
+		"VolumeFiltrato": {
+			"type": "object",
+			"description" : "Volume di acqua filtrato in metri cubi.",
+			"properties": {
+				"VolumeFiltrato": {
+					"type" : "string",
+					"description" : "Volume di acqua filtrato in metri cubi.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["VolumeFiltrato"]
+		}
+	}
+
+}

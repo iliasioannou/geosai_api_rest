@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Sabbia.json",
+	"title" : "Sabbia Schema",
+	"description" : "Sabbia Schema",
+
+	"definitions": {
+		"Sabbia": {
+			"type": "object",
+			"description" : "Percentuale di ricoprimento della spiaggia con sabbia.",
+			"properties": {
+				"Sabbia": {
+					"type" : "string",
+					"description" : "Percentuale di ricoprimento della spiaggia con sabbia.",
+					"pattern" : "^100$|^\\d{0,2}(\\.\\d{1,2})? *%?$"
+				}
+			},
+			"required": ["Sabbia"]
+		}
+	}
+
+}

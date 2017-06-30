@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DistPorti.json",
+	"title" : "DistPorti Schema",
+	"description" : "DistPorti Schema",
+
+	"definitions": {
+		"DistPorti": {
+			"type": "object",
+			"description" : "Distanza tra l'area di campionamento e i porti in Km.",
+			"properties": {
+				"DistPorti": {
+					"type" : "string",
+					"description" : "Distanza tra l'area di campionamento e i porti in Km.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["DistPorti"]
+		}
+	}
+
+}

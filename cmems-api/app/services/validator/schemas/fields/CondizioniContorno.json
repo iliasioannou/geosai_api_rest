@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CondizioniContorno.json",
+	"title" : "CondizioniContorno Schema",
+	"description" : "CondizioniContorno Schema",
+
+	"definitions": {
+		"CondizioniContorno": {
+			"type": "object",
+			"description" : "Condizioni al contorno (ad es. scaduta di mareggiata, macrolitter alla deriva, plume fluviale, discontinuità apparente nella colorazione delle acque).",
+			"properties": {
+				"CondizioniContorno": {
+					"type" : "string",
+					"description" : "Condizioni al contorno (ad es. scaduta di mareggiata, macrolitter alla deriva, plume fluviale, discontinuità apparente nella colorazione delle acque)."
+				}
+			}
+		}
+	}
+
+}

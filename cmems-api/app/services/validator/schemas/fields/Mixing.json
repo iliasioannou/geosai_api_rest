@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Mixing.json",
+	"title" : "Mixing Schema",
+	"description" : "Mixing Schema",
+
+	"definitions": {
+		"Mixing": {
+			"type": "object",
+			"description": "Caratteristiche di mescolamento della colonna d'acqua nel punto stazione, inserire uno dei valori della lista.",
+			"properties": {
+				"Mixing": {
+					"type": "string",
+					"enum": ["FM","PM","VS"],
+					"description": "Caratteristiche di mescolamento della colonna d'acqua nel punto stazione, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Mixing"]
+		}
+	}
+
+}

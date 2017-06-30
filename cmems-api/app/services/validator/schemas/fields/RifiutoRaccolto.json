@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/RifiutoRaccolto.json",
+	"title" : "RifiutoRaccolto Schema",
+	"description" : "RifiutoRaccolto Schema",
+
+	"definitions": {
+		"RifiutoRaccolto": {
+			"type": "object",
+			"description" : "Rifiuto raccolto durante il rilevamento (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"RifiutoRaccolto": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Rifiuto raccolto durante il rilevamento (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["RifiutoRaccolto"]
+		}
+	}
+
+}

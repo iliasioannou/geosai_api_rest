@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Localita.json",
+	"title" : "Localita Schema",
+	"description" : "Localita Schema",
+
+	"definitions": {
+		"Localita": {
+			"type": "object",
+			"description" : "Denominazione della spiaggia.",
+			"properties": {
+				"Localita": {
+					"type" : "string",
+					"description" : "Denominazione della spiaggia."
+				}
+			},
+			"required": ["Localita"]
+		}
+	}
+
+}

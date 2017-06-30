@@ -1,0 +1,57 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_3/Chimico-fisici.json",
+	"title": "Chimico-fisici Schema",
+	"description": "Lista di standard per Chimico-fisici.",
+
+	"type": "object",
+	"properties": {
+
+		"Chimico-fisici": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Determinand_PhysicoChem.json#/definitions/Determinand_PhysicoChem" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Unit_PhysicoChem.json#/definitions/Unit_PhysicoChem" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/LOD_LOQ_Flag.json#/definitions/LOD_LOQ_Flag" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Concentration.json#/definitions/Concentration" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

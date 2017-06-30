@@ -1,0 +1,85 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_2/MicroplasticheRet.json",
+	"title": "MicroplasticheRet Schema",
+	"description": "Lista di standard per MicroplasticheRet.",
+
+	"type": "object",
+	"properties": {
+
+		"MicroplasticheRet": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Transetto.json#/definitions/Transetto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Temp.json#/definitions/Temp" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Salinity.json#/definitions/Salinity" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SecchiDepth.json#/definitions/SecchiDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DO.json#/definitions/DO" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/pH.json#/definitions/pH" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/StatoMare.json#/definitions/StatoMare" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/ForzaVento.json#/definitions/ForzaVento" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DirezioneVento.json#/definitions/DirezioneVento" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NumGiriFlussimetro.json#/definitions/NumGiriFlussimetro" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CostanteFlussimetro.json#/definitions/CostanteFlussimetro" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/VelocitaImbarcazione.json#/definitions/VelocitaImbarcazione" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

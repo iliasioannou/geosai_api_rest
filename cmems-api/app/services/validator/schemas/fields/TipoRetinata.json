@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TipoRetinata.json",
+	"title" : "TipoRetinata Schema",
+	"description" : "TipoRetinata Schema",
+
+	"definitions": {
+		"TipoRetinata": {
+			"type": "object",
+			"description" : "Retinata verticale da -50 m alla superficie su fondali con batimetrie maggiori di 50 m altrimenti dal fondo alla superficie.",
+			"properties": {
+				"TipoRetinata": {
+					"type" : "string",
+					"description" : "Retinata verticale da -50 m alla superficie su fondali con batimetrie maggiori di 50 m altrimenti dal fondo alla superficie."
+				}
+			},
+			"required": ["TipoRetinata"]
+		}
+	}
+
+}

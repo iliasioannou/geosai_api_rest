@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Stabilimenti.json",
+	"title" : "Stabilimenti Schema",
+	"description" : "Stabilimenti Schema",
+
+	"definitions": {
+		"Stabilimenti": {
+			"type": "object",
+			"description" : "Spiaggia limitrofa a stabilimenti/porti (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"Stabilimenti": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia limitrofa a stabilimenti/porti (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Stabilimenti"]
+		}
+	}
+
+}

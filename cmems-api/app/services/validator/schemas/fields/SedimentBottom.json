@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SedimentBottom.json",
+	"title" : "SedimentBottom Schema",
+	"description" : "SedimentBottom Schema",
+
+	"definitions": {
+		"SedimentBottom": {
+			"type": "object",
+			"description" : "Per la matrice sedimento: Distanza tra il limite inferiore del sedimento analizzato e la superificie dei sedimenti in cm.",
+			"properties": {
+				"SedimentBottom": {
+					"type" : "string",
+					"description" : "Per la matrice sedimento: Distanza tra il limite inferiore del sedimento analizzato e la superificie dei sedimenti in cm.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			}
+		}
+	}
+
+}

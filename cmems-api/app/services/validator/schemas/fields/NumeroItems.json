@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NumeroItems.json",
+	"title" : "NumeroItems Schema",
+	"description" : "NumeroItems Schema",
+
+	"definitions": {
+		"NumeroItems": {
+			"type": "object",
+			"description" : "Numero di items presenti nella categoria .",
+			"properties": {
+				"NumeroItems": {
+					"type" : "string",
+					"description" : "Numero di items presenti nella categoria .",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["NumeroItems"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DistanzaIndividui.json",
+	"title" : "DistanzaIndividui Schema",
+	"description" : "DistanzaIndividui Schema",
+
+	"definitions": {
+		"DistanzaIndividui": {
+			"type": "object",
+			"description" : "Distanza media tra fli individui osservati, inserire uno dei valori della lista.",
+			"properties": {
+				"DistanzaIndividui": {
+					"type" : "string",
+					"enum" : ["=10 cm","<1 m","1-5 m","5-10 m","10-20 m",">20 m"],
+					"description" : "Distanza media tra fli individui osservati, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["DistanzaIndividui"]
+		}
+	}
+
+}

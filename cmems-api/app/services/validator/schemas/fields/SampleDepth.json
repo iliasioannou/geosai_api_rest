@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SampleDepth.json",
+	"title" : "SampleDepth Schema",
+	"description" : "SampleDepth Schema",
+
+	"definitions": {
+		"SampleDepth": {
+			"type": "object",
+			"description" : "Profondità di prelievo del campione in metri.",
+			"properties": {
+				"SampleDepth": {
+					"type" : "string",
+					"description" : "Profondità di prelievo del campione in metri.",
+					"pattern" : "^(\\d(\\.\\d+)?|\\d\\d(\\.\\d+)?|\\d\\d\\d(\\.\\d+)?|[0-3]\\d\\d\\d(\\.\\d+)?|4000)$"
+				}
+			},
+			"required": ["SampleDepth"]
+		}
+	}
+
+}

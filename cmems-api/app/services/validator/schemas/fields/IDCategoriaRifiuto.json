@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/IDCategoriaRifiuto.json",
+	"title" : "IDCategoriaRifiuto Schema",
+	"description" : "IDCategoriaRifiuto Schema",
+
+	"definitions": {
+		"IDCategoriaRifiuto": {
+			"type": "object",
+			"description" : "Codice identificativo della categoria del rifiuto, inserire uno dei valori della lista presente nel foglio 'lista_categorie_rifiuti'.",
+			"properties": {
+				"IDCategoriaRifiuto": {
+					"type" : "string",
+					"enum" : ["IT1","IT2","IT3","IT4","IT5","IT6","IT7","IT8","IT9","IT10","IT11","IT12","IT13","IT14","IT15","IT16","IT17","IT18","IT19","IT20","IT21","IT22","IT23","IT24","IT25","IT26","IT27","IT28","IT29","IT30","IT31","IT32","IT33","IT34","IT35","IT36","IT37","IT38","IT39","IT40","IT41","IT42","IT43","IT44","IT45","IT46","IT47","IT48","IT49","IT50","IT51","IT52","IT53","IT54","IT55","IT56","IT57","IT58","IT59"],
+					"description" : "Codice identificativo della categoria del rifiuto, inserire uno dei valori della lista presente nel foglio 'lista_categorie_rifiuti'."
+				}
+			},
+			"required": ["IDCategoriaRifiuto"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Ciotoli.json",
+	"title" : "Ciotoli Schema",
+	"description" : "Ciotoli Schema",
+
+	"definitions": {
+		"Ciotoli": {
+			"type": "object",
+			"description" : "Percentuale di ricoprimento della spiaggia con ciotoli.",
+			"properties": {
+				"Ciotoli": {
+					"type" : "string",
+					"description" : "Percentuale di ricoprimento della spiaggia con ciotoli.",
+					"pattern" : "^100$|^\\d{0,2}(\\.\\d{1,2})? *%?$"
+				}
+			},
+			"required": ["Ciotoli"]
+		}
+	}
+
+}

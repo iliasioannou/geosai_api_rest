@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NomeFociScarichi.json",
+	"title" : "NomeFociScarichi Schema",
+	"description" : "NomeFociScarichi Schema",
+
+	"definitions": {
+		"NomeFociScarichi": {
+			"type": "object",
+			"description" : "Inserire il nome dei fiumi/scarichi.",
+			"properties": {
+				"NomeFociScarichi": {
+					"type" : "string",
+					"description" : "Inserire il nome dei fiumi/scarichi."
+				}
+			},
+			"required": ["NomeFociScarichi"]
+		}
+	}
+
+}

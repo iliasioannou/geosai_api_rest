@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/MatrixMod5TContaminanti.json",
+	"title" : "MatrixMod5TContaminanti Schema",
+	"description" : "MatrixMod5TContaminanti Schema",
+
+	"definitions": {
+		"Matrix": {
+			"type": "object",
+			"description" : "Matrice del campione, inserire uno dei valori della lista.",
+			"properties": {
+				"Matrix": {
+					"type" : "string",
+					"enum" : ["S"],
+					"description" : "Matrice del campione, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Matrix"]
+		}
+	}
+
+}

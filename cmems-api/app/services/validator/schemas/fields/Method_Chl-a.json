@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Method_Chl-a.json",
+	"title" : "Method_Chl-a Schema",
+	"description" : "Method_Chl-a Schema",
+
+	"definitions": {
+		"Method_Chl-a": {
+			"type": "object",
+			"description" : "Metodo analitico utilizzato per la Clorofilla a, inserire uno dei valori della lista.",
+			"properties": {
+				"Method_Chl-a": {
+					"type" : "string",
+					"pattern" : "^HPLC$|^Spectrophotometric$|^Fluorometric \\(Conventional\\)$|^Fluorometric \\(Modified, with Narrow Band Pass Filters\\)$|^Altro *",
+					"description" : "Metodo analitico utilizzato per la Clorofilla a, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Method_Chl-a"]
+		}
+	}
+
+}

@@ -1,0 +1,145 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_4/Spiaggia.json",
+	"title": "Spiaggia Schema",
+	"description": "Lista di standard per Spiaggia.",
+
+	"type": "object",
+	"properties": {
+
+		"Spiaggia": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CodiceSpiaggia.json#/definitions/CodiceSpiaggia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NomeSpiaggia.json#/definitions/NomeSpiaggia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Transetto.json#/definitions/Transetto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Provincia.json#/definitions/Provincia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Comune.json#/definitions/Comune" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Localita.json#/definitions/Localita" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Ampiezza.json#/definitions/Ampiezza" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AreaUrbanizzata.json#/definitions/AreaUrbanizzata" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NomeAreaUrbanizzata.json#/definitions/NomeAreaUrbanizzata" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DistAreaUrbanizzata.json#/definitions/DistAreaUrbanizzata" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/FociScarichi.json#/definitions/FociScarichi" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NomeFociScarichi.json#/definitions/NomeFociScarichi" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DistFociScarichi.json#/definitions/DistFociScarichi" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Porti.json#/definitions/Porti" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NomePorti.json#/definitions/NomePorti" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DistPorti.json#/definitions/DistPorti" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/IndustrieDiscariche.json#/definitions/IndustrieDiscariche" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NomeIndustrieDiscariche.json#/definitions/NomeIndustrieDiscariche" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DistIndustrieDiscariche.json#/definitions/DistIndustrieDiscariche" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Stabilimenti.json#/definitions/Stabilimenti" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/UsoBalneare.json#/definitions/UsoBalneare" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AccessoRemota.json#/definitions/AccessoRemota" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AccessoPedonale.json#/definitions/AccessoPedonale" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AccessoBarche.json#/definitions/AccessoBarche" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Sabbia.json#/definitions/Sabbia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Ciotoli.json#/definitions/Ciotoli" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CostaRocciosa.json#/definitions/CostaRocciosa" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Pendenza.json#/definitions/Pendenza" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/RifiutoRaccolto.json#/definitions/RifiutoRaccolto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DataUltimaPulitura.json#/definitions/DataUltimaPulitura" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

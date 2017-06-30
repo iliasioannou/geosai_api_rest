@@ -1,0 +1,36 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/aggregate/Transetto.json",
+	"title" : "Transetto Schema",
+	"description" : "Transetto Schema",
+
+	"definitions": {
+		"Transetto": {
+			"type": "object",
+			"properties": {
+				"LatitudeInizio" : {
+					"type" : "string",
+					"description" : "Latitudine di inizio rilevamento nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern" : "^-?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+				},
+				"LongitudeInizio" : {
+					"type" : "string",
+					"description" : "Longitudine di inizio rilevamento nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern" : "^-?(?:180(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[1-7][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+				},
+				"LatitudeFine" : {
+					"type" : "string",
+					"description" : "Latitudine di fine rilevamento nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern" : "^-?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+				},
+				"LongitudeFine" : {
+					"type" : "string",
+					"description" : "Longitudine di fine rilevamento nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern" : "^-?(?:180(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[1-7][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+				}
+			},
+			"required": ["LatitudeInizio","LongitudeInizio","LatitudeFine","LongitudeFine"]
+		}
+	}
+
+}

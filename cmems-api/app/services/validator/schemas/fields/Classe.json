@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Classe.json",
+	"title" : "Classe Schema",
+	"description" : "Classe Schema",
+
+	"definitions": {
+		"Classe": {
+			"type": "object",
+			"description" : "Classe di appartenenza della/e specie. Campo facoltativo",
+			"properties": {
+				"Classe": {
+					"type" : "string",
+					"description" : "Classe di appartenenza della/e specie. Campo facoltativo"
+				}
+			}
+		}
+	}
+
+}

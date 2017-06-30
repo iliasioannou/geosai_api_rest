@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Lunghezza.json",
+	"title" : "Lunghezza Schema",
+	"description" : "Lunghezza Schema",
+
+	"definitions": {
+		"Lunghezza": {
+			"type": "object",
+			"description" : "Lunghezza effettiva tratto campionato (m).",
+			"properties": {
+				"Lunghezza": {
+					"type" : "string",
+					"description" : "Lunghezza effettiva tratto campionato (m).",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["Lunghezza"]
+		}
+	}
+
+}

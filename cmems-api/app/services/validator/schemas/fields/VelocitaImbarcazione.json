@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/VelocitaImbarcazione.json",
+	"title" : "VelocitaImbarcazione Schema",
+	"description" : "VelocitaImbarcazione Schema",
+
+	"definitions": {
+		"VelocitaImbarcazione": {
+			"type": "object",
+			"description" : "Velocità media tenuta dall'imbarcazione durante le operazioni di campionamento espressa in nodi.",
+			"properties": {
+				"VelocitaImbarcazione": {
+					"type" : "string",
+					"description" : "Velocità media tenuta dall'imbarcazione durante le operazioni di campionamento espressa in nodi.",
+					"pattern" : "^\\d+(\\.\\d+)?$"
+				}
+			},
+			"required": ["VelocitaImbarcazione"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Unit_HazSubs.json",
+	"title" : "Unit_HazSubs Schema",
+	"description" : "Unit_HazSubs Schema",
+
+	"definitions": {
+		"Unit_HazSubs": {
+			"type": "object",
+			"description" : "Unità di misura della sostanza contaminante, inserire uno dei valori della lista.",
+			"properties": {
+				"Unit_HazSubs": {
+					"type" : "string",
+					"enum" : ["µg/L","µg/kg"],
+					"description" : "Unità di misura della sostanza contaminante, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Unit_HazSubs"]
+		}
+	}
+
+}

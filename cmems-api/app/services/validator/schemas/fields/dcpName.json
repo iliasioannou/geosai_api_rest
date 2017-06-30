@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/dcpName.json",
+	"title" : "dcpName Schema",
+	"description" : "dcpName Schema",
+
+	"definitions": {
+		"dcpName": {
+			"type": "object",
+			"description" : "Denominazione del punto di scarico come riportato nel Questionario UWWTD.",
+			"properties": {
+				"dcpName": {
+					"type" : "string",
+					"description" : "Denominazione del punto di scarico come riportato nel Questionario UWWTD."
+				}
+			},
+			"required": ["dcpName"]
+		}
+	}
+
+}

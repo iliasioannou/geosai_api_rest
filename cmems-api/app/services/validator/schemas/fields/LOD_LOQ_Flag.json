@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/LOD_LOQ_Flag.json",
+	"title" : "LOD_LOQ_Flag Schema",
+	"description" : "LOD_LOQ_Flag Schema",
+
+	"definitions": {
+		"LOD_LOQ_Flag": {
+			"type": "object",
+			"description" : "Inserire il valore '<' nel caso il valore di concentrazione sia inferiore al limite di quantificazione o il valore '[' nel caso il valore di concentrazione sia inferiore al limite di rilevabilità. Negli altri casi lasciare il campo vuoto.",
+			"properties": {
+				"LOD_LOQ_Flag": {
+					"type" : "string",
+					"enum" : ["<","["],
+					"description" : "Inserire il valore '<' nel caso il valore di concentrazione sia inferiore al limite di quantificazione o il valore '[' nel caso il valore di concentrazione sia inferiore al limite di rilevabilità. Negli altri casi lasciare il campo vuoto."
+				}
+			}
+		}
+	}
+
+}

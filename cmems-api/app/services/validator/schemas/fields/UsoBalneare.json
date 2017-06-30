@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/UsoBalneare.json",
+	"title" : "UsoBalneare Schema",
+	"description" : "UsoBalneare Schema",
+
+	"definitions": {
+		"UsoBalneare": {
+			"type": "object",
+			"description" : "Spiaggia ad uso balneare (Si/No).",
+			"properties": {
+				"UsoBalneare": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia ad uso balneare (Si/No)."
+				}
+			},
+			"required": ["UsoBalneare"]
+		}
+	}
+
+}

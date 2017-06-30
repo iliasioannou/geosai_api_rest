@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_6A/Modulo_6A_12-05-2016.json",
+	"title" : "Modulo_6A_12-05-2016.xls",
+	"description" : "Lista di standard per Modulo_6A_12-05-2016.",
+
+	"type" : "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./Modulo_6A/Stazioni.json#/properties/Stazioni" },
+		"Nutrienti": { "$ref": "./Modulo_6A/Nutrienti.json#/properties/Nutrienti" }
+
+	}
+}

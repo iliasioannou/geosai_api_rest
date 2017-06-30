@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Unit_PhysicoChem.json",
+	"title" : "Unit_PhysicoChem Schema",
+	"description" : "Unit_PhysicoChem Schema",
+
+	"definitions": {
+		"Unit_PhysicoChem": {
+			"type": "object",
+			"description" : "Unità di misura del parametro chimico-fisico, inserire uno dei valori della lista.",
+			"properties": {
+				"Unit_PhysicoChem": {
+					"type" : "string",
+					"enum" : ["m","°C","psu"],
+					"description" : "Unità di misura del parametro chimico-fisico, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Unit_PhysicoChem"]
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+{
+	"database": {
+		"host": "localhost",
+		"name": "cmems_db",
+		"user": "postgres",
+		"password": "postgres"
+	},
+	"server": {
+		"name": "<%= pkg.name %>",
+		"version": "<%= pkg.version %>",
+		"buildDate": "<%= grunt.template.today("yyyy-mm-dd HH:MM:ss Z") %>",
+		"portHttp": 3000,
+		"portHttps": 3003
+	},
+	"api": {
+		"version": "1.0.0",
+		"rootDocRepository": "/var/www/html"
+	}
+}

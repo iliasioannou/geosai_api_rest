@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Tissue.json",
+	"title" : "Tissue Schema",
+	"description" : "Tissue Schema",
+
+	"definitions": {
+		"Tissue": {
+			"type": "object",
+			"description" : "Per matrice biota: Elemento del tessuto della specie monitorata, inserire uno dei valori della lista.",
+			"properties": {
+				"Tissue": {
+					"type" : "string",
+					"enum" : ["BA","BB","BC","BL","BO","BR","BS","BW","EG","EH","EP","FA","FE","GI","GO","KI","LI","MU","OV","RO","SB","SH","TM","WO"],
+					"description" : "Per matrice biota: Elemento del tessuto della specie monitorata, inserire uno dei valori della lista."
+				}
+			}
+		}
+	}
+
+}

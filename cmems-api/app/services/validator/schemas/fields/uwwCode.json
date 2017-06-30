@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/uwwCode.json",
+	"title" : "uwwCode Schema",
+	"description" : "uwwCode Schema",
+
+	"definitions": {
+		"uwwCode": {
+			"type": "object",
+			"description" : "Codice dell'impianto di depurazione come riportato nel Questionario UWWTD.",
+			"properties": {
+				"uwwCode": {
+					"type" : "string",
+					"description" : "Codice dell'impianto di depurazione come riportato nel Questionario UWWTD."
+				}
+			},
+			"required": ["uwwCode"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/GruppoMesozooplancton.json",
+	"title" : "GruppoMesozooplancton Schema",
+	"description" : "GruppoMesozooplancton Schema",
+
+	"definitions": {
+		"Gruppo": {
+			"type": "object",
+			"description" : "Gruppo di appartenenza della/e specie, inserire uno dei valori della lista.",
+			"properties": {
+				"Gruppo": {
+					"type" : "string",
+					"enum" : ["Cladoceri","Copepodi","Altro_Zooplancton"],
+					"description" : "Gruppo di appartenenza della/e specie, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Gruppo"]
+		}
+	}
+
+}

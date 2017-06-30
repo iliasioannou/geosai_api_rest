@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Matrix.json",
+	"title" : "Matrix Schema",
+	"description" : "Matrix Schema",
+
+	"definitions": {
+		"Matrix": {
+			"type": "object",
+			"description" : "Matrice del campione, inserire uno dei valori della lista.",
+			"properties": {
+				"Matrix": {
+					"type" : "string",
+					"enum" : ["W","S","B"],
+					"description" : "Matrice del campione, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Matrix"]
+		}
+	}
+
+}

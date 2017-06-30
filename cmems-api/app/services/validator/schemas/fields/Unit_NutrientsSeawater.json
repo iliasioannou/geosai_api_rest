@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Unit_NutrientsSeawater.json",
+	"title" : "Unit_NutrientsSeawater Schema",
+	"description" : "Unit_NutrientsSeawater Schema",
+
+	"definitions": {
+		"Unit_NutrientsSeawater": {
+			"type": "object",
+			"description" : "Unità di misura del parametro chimico-fisico o nutriente, inserire uno dei valori della lista.",
+			"properties": {
+				"Unit_NutrientsSeawater": {
+					"type" : "string",
+					"enum" : ["%","m","pH","°C","µg/l","µmol N/l","µmol O2/l","µmol P/l","µmol Si/l","µS/cm"],
+					"description" : "Unità di misura del parametro chimico-fisico o nutriente, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Unit_NutrientsSeawater"]
+		}
+	}
+
+}

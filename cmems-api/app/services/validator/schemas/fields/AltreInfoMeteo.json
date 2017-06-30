@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AltreInfoMeteo.json",
+	"title" : "AltreInfoMeteo Schema",
+	"description" : "AltreInfoMeteo Schema",
+
+	"definitions": {
+		"AltreInfoMeteo": {
+			"type": "object",
+			"description" : "Altre informazioni sul meteo (ad es. nuvolosità, precipitazioni).",
+			"properties": {
+				"AltreInfoMeteo": {
+					"type" : "string",
+					"description" : "Altre informazioni sul meteo (ad es. nuvolosità, precipitazioni)."
+				}
+			}
+		}
+	}
+
+}

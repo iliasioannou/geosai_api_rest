@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NomeSpiaggia.json",
+	"title" : "NomeSpiaggia Schema",
+	"description" : "NomeSpiaggia Schema",
+
+	"definitions": {
+		"NomeSpiaggia": {
+			"type": "object",
+			"description" : "Denominazione della spiaggia.",
+			"properties": {
+				"NomeSpiaggia": {
+					"type" : "string",
+					"description" : "Denominazione della spiaggia."
+				}
+			},
+			"required": ["NomeSpiaggia"]
+		}
+	}
+
+}

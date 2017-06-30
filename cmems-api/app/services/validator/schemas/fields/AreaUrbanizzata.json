@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AreaUrbanizzata.json",
+	"title" : "AreaUrbanizzata Schema",
+	"description" : "AreaUrbanizzata Schema",
+
+	"definitions": {
+		"AreaUrbanizzata": {
+			"type": "object",
+			"description" : "Spiaggia limitrofa ad aree urbanizzate (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"AreaUrbanizzata": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia limitrofa ad aree urbanizzate (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["AreaUrbanizzata"]
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_2/Modulo_2_17-10-2016.json",
+	"title": "Modulo_2_17-10-2016 Schema",
+	"description": "Lista di standard per Modulo_2_17-10-2016.",
+
+	"type": "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./app/schemas/Modulo_2/Stazioni.json#/properties/Stazioni" },
+		"MicroplasticheRet": { "$ref": "./app/schemas/Modulo_2/MicroplasticheRet.json#/properties/MicroplasticheRet" },
+		"MicroplasticheCamp": { "$ref": "./app/schemas/Modulo_2/MicroplasticheCamp.json#/properties/MicroplasticheCamp" }
+
+	}
+
+}

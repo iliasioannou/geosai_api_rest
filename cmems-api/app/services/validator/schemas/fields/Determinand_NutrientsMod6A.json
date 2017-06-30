@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Determinand_NutrientsMod6A.json",
+	"title" : "Determinand_NutrientsMod6A Schema",
+	"description" : "Determinand_NutrientsMod6A Schema",
+
+	"definitions": {
+		"Determinand_Nutrients": {
+			"type": "object",
+			"description" : "Denominazione del parametro nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_Nutrienti'.",
+			"properties": {
+				"Determinand_Nutrients": {
+					"type" : "string",
+					"enum" : ["Ammonium","Total phosphorus","Total nitrogen"],
+					"description" : "Denominazione del parametro nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_Nutrienti'."
+				}
+			},
+			"required": ["Determinand_Nutrients"]
+		}
+	}
+
+}

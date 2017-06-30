@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Abbondanza.json",
+	"title" : "Abbondanza Schema",
+	"description" : "Abbondanza Schema",
+
+	"definitions": {
+		"Abbondanza": {
+			"type": "object",
+			"description" : "Numero di individui osservati, inserire uno dei valori della lista.",
+			"properties": {
+				"Abbondanza": {
+					"type" : "string",
+					"enum" : ["<10","10-100","100-500","500-1000",">1000"],
+					"description" : "Numero di individui osservati, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Abbondanza"]
+		}
+	}
+
+}

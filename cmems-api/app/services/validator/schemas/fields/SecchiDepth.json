@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SecchiDepth.json",
+	"title" : "SecchiDepth Schema",
+	"description" : "SecchiDepth Schema",
+
+	"definitions": {
+		"SecchiDepth": {
+			"type": "object",
+			"description" : "Disco Secchi (m).",
+			"properties": {
+				"SecchiDepth": {
+					"type" : "string",
+					"description" : "Disco Secchi (m).",
+					"pattern" : "^(\\d(\\.\\d+)?|\\d\\d(\\.\\d+)?|\\d\\d\\d(\\.\\d+)?|[0-3]\\d\\d\\d(\\.\\d+)?|4000)$"
+				}
+			},
+			"required": ["SecchiDepth"]
+		}
+	}
+
+}

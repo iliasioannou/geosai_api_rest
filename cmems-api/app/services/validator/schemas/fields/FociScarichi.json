@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/FociScarichi.json",
+	"title" : "FociScarichi Schema",
+	"description" : "FociScarichi Schema",
+
+	"definitions": {
+		"FociScarichi": {
+			"type": "object",
+			"description" : "Spiaggia limitrofa a foci fluviali o scarichi di acque (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"FociScarichi": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia limitrofa a foci fluviali o scarichi di acque (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["FociScarichi"]
+		}
+	}
+
+}

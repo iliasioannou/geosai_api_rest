@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TipologiaAreaMod1.json",
+	"title" : "TipologiaAreaMod1 Schema",
+	"description" : "TipologiaAreaMod1 Schema",
+
+	"definitions": {
+		"TipologiaArea": {
+			"type": "object",
+			"description": "Tipologia dell'area monitorata, inserire uno dei valori della lista.",
+			"properties": {
+				"TipologiaArea": {
+					"type": "string",
+					"enum": ["HS","AMP","LTER","O"],
+					"description": "Tipologia dell'area monitorata, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["TipologiaArea"]
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/GrainType.json",
+	"title" : "GrainType Schema",
+	"description" : "GrainType Schema",
+
+	"definitions": {
+		"GrainType": {
+			"type": "object",
+			"description" : "Per matrice sedimento: Tipologia del sedimento, inserire uno dei valori della lista.",
+			"properties": {
+				"GrainType": {
+					"type" : "string",
+					"enum" : ["CS","FS","G","M","MS"],
+					"description" : "Per matrice sedimento: Tipologia del sedimento, inserire uno dei valori della lista."
+				}
+			}
+		}
+	}
+
+}

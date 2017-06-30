@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Unit_Nutrients.json",
+	"title" : "Unit_Nutrients Schema",
+	"description" : "Unit_Nutrients Schema",
+
+	"definitions": {
+		"Unit_Nutrients": {
+			"type": "object",
+			"description" : "Unità di misura del parametro chimico-fisico o nutriente, inserire uno dei valori della lista.",
+			"properties": {
+				"Unit_Nutrients": {
+					"type" : "string",
+					"enum" : ["µmol N/l","µmol P/l","µg/Kg","%"],
+					"description" : "Unità di misura del parametro chimico-fisico o nutriente, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Unit_Nutrients"]
+		}
+	}
+
+}

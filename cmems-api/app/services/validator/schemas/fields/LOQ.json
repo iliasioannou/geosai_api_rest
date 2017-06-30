@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/LOQ.json",
+	"title" : "LOQ Schema",
+	"description" : "LOQ Schema",
+
+	"definitions": {
+		"LOQ": {
+			"type": "object",
+			"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)",
+			"properties": {
+				"LOQ": {
+					"type" : "string",
+					"description" : "Limite di quantificazione.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["LOQ"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Basis.json",
+	"title" : "Basis Schema",
+	"description" : "Basis Schema",
+
+	"definitions": {
+		"Basis": {
+			"type": "object",
+			"description" : "Per matrice biota: base di riferimento, inserire il valore 'W' per peso fresco",
+			"properties": {
+				"Basis": {
+					"type" : "string",
+					"enum" : ["W"],
+					"description" : "Per matrice biota: base di riferimento, inserire il valore 'W' per peso fresco"
+				}
+			},
+			"required": ["Basis"]
+		}
+	}
+
+}

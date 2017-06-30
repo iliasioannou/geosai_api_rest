@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/ClasseDim.json",
+	"title" : "ClasseDim Schema",
+	"description" : "ClasseDim Schema",
+
+	"definitions": {
+		"ClasseDim": {
+			"type": "object",
+			"description" : "Classe dimensionale, inserire uno dei valori della lista.",
+			"properties": {
+				"ClasseDim": {
+					"type" : "string",
+					"enum" : ["NF","MF","PZ","MZ","GZ"],
+					"description" : "Classe dimensionale, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["ClasseDim"]
+		}
+	}
+
+}

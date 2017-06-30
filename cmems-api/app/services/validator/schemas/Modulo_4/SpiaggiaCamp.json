@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_4/SpiaggiaCamp.json",
+	"title": "SpiaggiaCamp Schema",
+	"description": "Lista di standard per SpiaggiaCamp.",
+
+	"type": "object",
+	"properties": {
+
+		"SpiaggiaCamp": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CodiceSpiaggia.json#/definitions/CodiceSpiaggia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Transetto.json#/definitions/Transetto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Lunghezza.json#/definitions/Lunghezza" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

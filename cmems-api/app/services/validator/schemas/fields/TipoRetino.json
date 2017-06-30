@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TipoRetino.json",
+	"title" : "TipoRetino Schema",
+	"description" : "TipoRetino Schema",
+
+	"definitions": {
+		"TipoRetino": {
+			"type": "object",
+			"description" : "Tipo di retino e/o campionatore utilizzato. Inserire il valore 'WP-2'.",
+			"properties": {
+				"TipoRetino": {
+					"type" : "string",
+					"description" : "Tipo di retino e/o campionatore utilizzato. Inserire il valore 'WP-2'.",
+					"pattern" : "^WP-2$"
+				}
+			},
+			"required": ["TipoRetino"]
+		}
+	}
+
+}

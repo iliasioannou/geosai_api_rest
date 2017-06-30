@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/StatoMare.json",
+	"title" : "StatoMare Schema",
+	"description" : "StatoMare Schema",
+
+	"definitions": {
+		"StatoMare": {
+			"type": "object",
+			"description" : "Stato del mare secondo la scala di Douglas da 0 a 9 gradi.",
+			"properties": {
+				"StatoMare": {
+					"type" : "string",
+					"description" : "Stato del mare secondo la scala di Douglas da 0 a 9 gradi.",
+					"pattern" : "^([0-8](\\.\\d+)?|9)$"
+				}
+			},
+			"required": ["StatoMare"]
+		}
+	}
+
+}

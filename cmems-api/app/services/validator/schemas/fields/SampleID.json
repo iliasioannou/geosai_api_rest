@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SampleID.json",
+	"title" : "SampleID Schema",
+	"description" : "SampleID Schema",
+
+	"definitions": {
+		"SampleID": {
+			"type": "object",
+			"description" : "Codice del campione nel caso siano effettuate più repliche con lo stesso valore di Year, Month, Day e Time.",
+			"properties": {
+				"SampleID": {
+					"type" : "string",
+          "description" : "Codice del campione nel caso siano effettuate più repliche con lo stesso valore di Year, Month, Day e Time."
+				}
+			}
+		}
+	}
+
+}

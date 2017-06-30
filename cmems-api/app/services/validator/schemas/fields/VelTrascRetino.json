@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/VelTrascRetino.json",
+	"title" : "VelTrascRetino Schema",
+	"description" : "VelTrascRetino Schema",
+
+	"definitions": {
+		"VelTrascRetino": {
+			"type": "object",
+			"description" : "Velocità di trascinamento del retino in m/s.  Inserire il valore '0,5-1'.",
+			"properties": {
+				"VelTrascRetino": {
+					"type" : "string",
+					"description" : "Velocità di trascinamento del retino in m/s.  Inserire il valore '0,5-1'.",
+					"pattern" : "^0.5-1$"
+				}
+			},
+			"required": ["VelTrascRetino"]
+		}
+	}
+
+}

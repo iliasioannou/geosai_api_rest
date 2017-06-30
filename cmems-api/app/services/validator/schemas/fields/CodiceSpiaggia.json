@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CodiceSpiaggia.json",
+	"title" : "CodiceSpiaggia Schema",
+	"description" : "CodiceSpiaggia Schema",
+
+	"definitions": {
+		"CodiceSpiaggia": {
+			"type": "object",
+			"description" : "Codice del tratto di spiaggia indagato.",
+			"properties": {
+				"CodiceSpiaggia": {
+					"type" : "string",
+					"description" : "Codice del tratto di spiaggia indagato."
+				}
+			},
+			"required": ["CodiceSpiaggia"]
+		}
+	}
+
+}

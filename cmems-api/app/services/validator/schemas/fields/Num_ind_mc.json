@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Num_ind_mc.json",
+	"title" : "Num_ind_mc Schema",
+	"description" : "Num_ind_mc Schema",
+
+	"definitions": {
+		"Num_ind_mc": {
+			"type": "object",
+			"description" : "Numero individui della/e specie al metro cubo.",
+			"properties": {
+				"Num_ind_mc": {
+					"type" : "string",
+					"description" : "Numero individui della/e specie al metro cubo.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["Num_ind_mc"]
+		}
+	}
+
+}

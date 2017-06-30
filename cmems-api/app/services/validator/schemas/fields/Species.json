@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Species.json",
+	"title" : "Species Schema",
+	"description" : "Species Schema",
+
+	"definitions": {
+		"Species": {
+			"type": "object",
+			"description" : "Per matrice biota: Specie monitorata.",
+			"properties": {
+				"Species": {
+					"type" : "string",
+					"description" : "Per matrice biota: Specie monitorata."
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_6U/Modulo_6U_12-05-2016.json",
+	"title" : "Modulo_6U_12-05-2016.xls",
+	"description" : "Lista di standard per Modulo_6U_12-05-2016.",
+
+	"type" : "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./Modulo_6U/Stazioni.json#/properties/Stazioni" },
+		"Chimico-fisici": { "$ref": "./Modulo_6U/Chimico-fisici.json#/properties/Chimico-fisici" }
+
+	}
+}

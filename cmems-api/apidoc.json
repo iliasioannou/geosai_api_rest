@@ -1,0 +1,11 @@
+{
+	"name": "pkz019 Ispra",
+	"version": "1.0.0",
+	"description": "API REST Documentation",
+	"title": "pkz019 Ispra Api Rest Doc",
+	"url" : "http://<host>:<port>/api/vX",
+	"template": {
+		"withCompare": true,
+		"withGenerator": true
+	}
+}

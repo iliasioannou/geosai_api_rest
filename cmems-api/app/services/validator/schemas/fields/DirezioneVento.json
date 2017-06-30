@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DirezioneVento.json",
+	"title" : "DirezioneVento Schema",
+	"description" : "DirezioneVento Schema",
+
+	"definitions": {
+		"DirezioneVento": {
+			"type": "object",
+			"description" : "Direzione del vento misurata in gradi angolo rispetto al nord magnetico, così come riportata sulla bussola.",
+			"properties": {
+				"DirezioneVento": {
+					"type" : "string",
+					"description" : "Direzione del vento misurata in gradi angolo rispetto al nord magnetico, così come riportata sulla bussola.",
+					"pattern" : "^(3(([0-5][0-9]{0,2})|60))|([1-2][0-9]{2})|(^[1-9]$)|(^[1-9]{2}$)|(^0$)$"
+				}
+			},
+			"required": ["DirezioneVento"]
+		}
+	}
+
+}

@@ -1,0 +1,89 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_1/Mesozooplancton.json",
+	"title": "Mesozooplancton Schema",
+	"description": "Lista di standard per Mesozooplancton.",
+
+	"type": "object",
+	"properties": {
+
+		"Mesozooplancton": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/GruppoMesozooplancton.json#/definitions/Gruppo" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Classe.json#/definitions/Classe" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/MesozooplanctonTaxon.json#/definitions/Taxon" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/MesozooplanctonNuovoTaxon.json#/definitions/NuovoTaxon" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Autore.json#/definitions/Autore" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Num_ind_mc.json#/definitions/Num_ind_mc" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SpessoreStrato.json#/definitions/SpessoreStrato" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DImMaglieRetinoMod1.json#/definitions/DImMaglieRetino" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/TipoRetino.json#/definitions/TipoRetino" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/TipoRetinata.json#/definitions/TipoRetinata" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/VelTrascRetino.json#/definitions/VelTrascRetino" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/VolumeFiltrato.json#/definitions/VolumeFiltrato" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

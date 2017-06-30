@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TipoAggregazione.json",
+	"title" : "TipoAggregazione Schema",
+	"description" : "TipoAggregazione Schema",
+
+	"definitions": {
+		"TipoAggregazione": {
+			"type": "object",
+			"description" : "Tipologia di aggregazione degli individui, inserire uno dei valori della lista.",
+			"properties": {
+				"TipoAggregazione": {
+					"type" : "string",
+					"enum" : ["S","C","I","SC"],
+					"description" : "Tipologia di aggregazione degli individui, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["TipoAggregazione"]
+		}
+	}
+
+}

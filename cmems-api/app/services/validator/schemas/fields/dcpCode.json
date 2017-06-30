@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/dcpCode.json",
+	"title" : "dcpCode Schema",
+	"description" : "dcpCode Schema",
+
+	"definitions": {
+		"dcpCode": {
+			"type": "object",
+			"description" : "Codice del punto di scarico come riportato nel Questionario UWWTD.",
+			"properties": {
+				"dcpCode": {
+					"type" : "string",
+					"description" : "Codice del punto di scarico come riportato nel Questionario UWWTD."
+				}
+			},
+			"required": ["dcpCode"]
+		}
+	}
+
+}

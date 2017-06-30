@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SpessoreStrato.json",
+	"title" : "SpessoreStrato Schema",
+	"description" : "SpessoreStrato Schema",
+
+	"definitions": {
+		"SpessoreStrato": {
+			"type": "object",
+			"description" : "Spessore dello strato campionato in metri.",
+			"properties": {
+				"SpessoreStrato": {
+					"type" : "string",
+					"description" : "Spessore dello strato campionato in metri.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["SpessoreStrato"]
+		}
+	}
+
+}

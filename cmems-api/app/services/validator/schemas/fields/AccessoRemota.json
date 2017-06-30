@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AccessoRemota.json",
+	"title" : "AccessoRemota Schema",
+	"description" : "AccessoRemota Schema",
+
+	"definitions": {
+		"AccessoRemota": {
+			"type": "object",
+			"description" : "Spiaggia remota (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"AccessoRemota": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia remota (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["AccessoRemota"]
+		}
+	}
+
+}

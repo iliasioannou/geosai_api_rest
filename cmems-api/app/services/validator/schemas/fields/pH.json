@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/pH.json",
+	"title" : "pH Schema",
+	"description" : "pH Schema",
+
+	"definitions": {
+		"pH": {
+			"type": "object",
+			"description" : "pH.",
+			"properties": {
+				"pH": {
+					"type" : "string",
+					"description" : "pH.",
+					"pattern" : "^(\\?[1-9]|[1][0-4])$"
+				}
+			},
+			"required": ["pH"]
+		}
+	}
+
+}

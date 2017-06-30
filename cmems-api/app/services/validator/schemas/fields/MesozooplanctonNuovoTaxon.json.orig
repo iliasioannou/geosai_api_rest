@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/MesozooplanctonNuovoTaxon.json",
+	"title" : "MesozooplanctonNuovoTaxon Schema",
+	"description" : "MesozooplanctonNuovoTaxon Schema",
+
+	"definitions": {
+		"NuovoTaxon": {
+			"type": "object",
+			"properties": {
+        "NuovoTaxon" : {
+          "type" : "string",
+          "not" : {
+            "$ref": "../.././app/schemas/fields/MesozooplanctonTaxon.json#/definitions/Taxon/properties/Taxon"
+          },
+          "description" : "Genere specie della specie, da utilizzare nel caso la specie non sia presente nel foglio 'Lista_specie_fitoplancton'."
+        }
+			}
+		}
+	}
+
+}

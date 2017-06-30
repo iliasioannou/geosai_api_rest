@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/MethodRetinata.json",
+	"title" : "MethodRetinata Schema",
+	"description" : "MethodRetinata Schema",
+
+	"definitions": {
+		"Method": {
+			"type": "object",
+			"description" : "Metodologia di campionamento. Inserire il valore 'Retinata'.",
+			"properties": {
+				"Method": {
+					"type" : "string",
+					"pattern" : "^Retinata$",
+					"description" : "Metodologia di campionamento. Inserire il valore 'Retinata'."
+				}
+			},
+			"required": ["Method"]
+		}
+	}
+
+}

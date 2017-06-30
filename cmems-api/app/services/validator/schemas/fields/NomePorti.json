@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NomePorti.json",
+	"title" : "NomePorti Schema",
+	"description" : "NomePorti Schema",
+
+	"definitions": {
+		"NomePorti": {
+			"type": "object",
+			"description" : "Inserire il nome dei porti più vicini.",
+			"properties": {
+				"NomePorti": {
+					"type" : "string",
+					"description" : "Inserire il nome dei porti più vicini."
+				}
+			},
+			"required": ["NomePorti"]
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_1/Plancton_CD.json",
+	"title": "Plancton_CD Schema",
+	"description": "Lista di standard per il Plancton_CD.",
+
+	"type": "object",
+	"properties": {
+
+		"Plancton_CD": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/FitoZoo.json#/definitions/FitoZoo" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/ClasseDim.json#/definitions/ClasseDim" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Abbondanza_CD.json#/definitions/Abbondanza_CD" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Unit_Abbondanza_CD.json#/definitions/Unit_Abbondanza_CD" }
+				}
+			]
+		}
+	}
+}

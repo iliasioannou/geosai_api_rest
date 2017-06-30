@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Unit_Abbondanza_CD.json",
+	"title" : "Unit_Abbondanza_CD Schema",
+	"description" : "Unit_Abbondanza_CD Schema",
+
+	"definitions": {
+		"Unit_Abbondanza_CD": {
+			"type": "object",
+			"description" : "Unità di misura della abbondanza della classe dimensionale, inserire uno dei valori della lista.",
+			"properties": {
+				"Unit_Abbondanza_CD": {
+					"type" : "string",
+					"enum" : ["Num_l","Num_mc"],
+					"description" : "Unità di misura della abbondanza della classe dimensionale, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Unit_Abbondanza_CD"]
+		}
+	}
+
+}

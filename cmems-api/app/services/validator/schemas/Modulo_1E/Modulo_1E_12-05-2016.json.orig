@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_1E/Modulo_1E_12-05-2016.json",
+	"title": "Modulo_1E_12-05-2016 Schema",
+	"description": "Lista di standard per Modulo_1E_12-05-2016.",
+
+	"type": "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./app/schemas/Modulo_1/Stazioni.json#/properties/Stazioni" },
+		"Chimico-fisici": { "$ref": "./app/schemas/Modulo_1/Chimico-fisici.json#/properties/Chimico-fisici" },
+		"Contaminanti": { "$ref": "./app/schemas/Modulo_1/Contaminanti.json#/properties/Contaminanti" },
+		"Fitoplancton": { "$ref": "./app/schemas/Modulo_1/Fitoplancton.json#/properties/Fitoplancton" },
+		"Mesozooplancton": { "$ref": "./app/schemas/Modulo_1/Mesozooplancton.json#/properties/Mesozooplancton" },
+		"Plancton_CD": { "$ref": "./app/schemas/Modulo_1/Plancton_CD.json#/properties/Plancton_CD" },
+		"Macrozooplancton": { "$ref": "./app/schemas/Modulo_1/Macrozooplancton.json#/properties/Macrozooplancton" },
+		"Macrozooplancton_oss": { "$ref": "./app/schemas/Modulo_1/Macrozooplancton_oss.json#/properties/Macrozooplancton_oss" }
+
+	}
+
+}

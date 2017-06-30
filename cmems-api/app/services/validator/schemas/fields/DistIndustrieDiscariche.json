@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DistIndustrieDiscariche.json",
+	"title" : "DistIndustrieDiscariche Schema",
+	"description" : "DistIndustrieDiscariche Schema",
+
+	"definitions": {
+		"DistIndustrieDiscariche": {
+			"type": "object",
+			"description" : "Distanza tra l'area di campionamento e i siti industriali/discariche in Km.",
+			"properties": {
+				"DistIndustrieDiscariche": {
+					"type" : "string",
+					"description" : "Distanza tra l'area di campionamento e i siti industriali/discariche in Km.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["DistIndustrieDiscariche"]
+		}
+	}
+
+}

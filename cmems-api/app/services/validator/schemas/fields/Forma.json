@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Forma.json",
+	"title" : "Forma Schema",
+	"description" : "Forma Schema",
+
+	"definitions": {
+		"Forma": {
+			"type": "object",
+			"description" : "Forma delle microplastiche, inserire uno dei valori della lista.",
+			"properties": {
+				"Forma": {
+					"type" : "string",
+					"enum" : ["sfera","filamento","frammento","foglio"],
+					"description" : "Forma delle microplastiche, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Forma"]
+		}
+	}
+
+}

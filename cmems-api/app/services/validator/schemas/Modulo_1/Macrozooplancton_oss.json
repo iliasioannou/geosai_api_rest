@@ -1,0 +1,57 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_1/Macrozooplancton_oss.json",
+	"title": "Macrozooplancton_oss Schema",
+	"description": "Lista di standard per Macrozooplancton_oss.",
+
+	"type": "object",
+	"properties": {
+
+		"Macrozooplancton_oss": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Point.json#/definitions/Point" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Macrozooplancton_ossTaxon.json#/definitions/Taxon" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Abbondanza.json#/definitions/Abbondanza" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DistanzaIndividui.json#/definitions/DistanzaIndividui" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/TipoAggregazione.json#/definitions/TipoAggregazione" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

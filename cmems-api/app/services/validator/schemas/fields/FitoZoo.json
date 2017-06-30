@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/FitoZoo.json",
+	"title" : "FitoZoo Schema",
+	"description" : "FitoZoo Schema",
+
+	"definitions": {
+		"FitoZoo": {
+			"type": "object",
+			"description" : "Indicare se fito o zooplancton, inserire uno dei valori della lista.",
+			"properties": {
+				"FitoZoo": {
+					"type" : "string",
+					"enum" : ["F","Z"],
+					"description" : "Indicare se fito o zooplancton, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["FitoZoo"]
+		}
+	}
+
+}

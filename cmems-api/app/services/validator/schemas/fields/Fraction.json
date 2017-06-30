@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Fraction.json",
+	"title" : "Fraction Schema",
+	"description" : "Fraction Schema",
+
+	"definitions": {
+		"Fraction": {
+			"type": "object",
+			"description" : "Per matrice sedimento: Dimensione massima delle particelle costituenti il sedimento in µm.",
+			"properties": {
+				"Fraction": {
+					"type" : "string",
+					"description" : "Per matrice sedimento: Dimensione massima delle particelle costituenti il sedimento in µm.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			}
+		}
+	}
+
+}

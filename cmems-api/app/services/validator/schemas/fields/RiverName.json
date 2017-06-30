@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/RiverName.json",
+	"title" : "RiverName Schema",
+	"description" : "RiverName Schema",
+
+	"definitions": {
+		"RiverName": {
+			"type": "object",
+			"description" : "Denominazione del fiume.",
+			"properties": {
+				"RiverName": {
+					"type" : "string",
+					"description" : "Denominazione del fiume."
+				}
+			},
+			"required": ["RiverName"]
+		}
+	}
+
+}

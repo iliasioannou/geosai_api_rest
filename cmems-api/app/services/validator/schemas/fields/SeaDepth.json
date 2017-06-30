@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SeaDepth.json",
+	"title" : "SeaDepth Schema",
+	"description" : "SeaDepth Schema",
+
+	"definitions": {
+		"SeaDepth": {
+			"type": "object",
+			"description": "Profondità del fondale in metri. (IEEE float)",
+			"properties": {
+				"SeaDepth": {
+					"type": "string",
+					"description": "Profondità del fondale in metri. (IEEE float)",
+					"pattern" : "^(\\d(\\.\\d+)?|\\d\\d(\\.\\d+)?|\\d\\d\\d(\\.\\d+)?|[0-3]\\d\\d\\d(\\.\\d+)?|4000)$"
+				}
+			},
+			"required": ["SeaDepth"]
+		}
+	}
+
+}

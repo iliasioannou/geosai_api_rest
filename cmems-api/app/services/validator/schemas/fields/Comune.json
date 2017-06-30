@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Comune.json",
+	"title" : "Comune Schema",
+	"description" : "Comune Schema",
+
+	"definitions": {
+		"Comune": {
+			"type": "object",
+			"description" : "Denominazione della spiaggia.",
+			"properties": {
+				"Comune": {
+					"type" : "string",
+					"description" : "Denominazione della spiaggia."
+				}
+			},
+			"required": ["Comune"]
+		}
+	}
+
+}

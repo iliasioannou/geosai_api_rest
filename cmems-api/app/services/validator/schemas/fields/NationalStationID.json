@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NationalStationID.json",
+	"title" : "NationalStationID Schema",
+	"description" : "NationalStationID Schema",
+
+	"definitions": {
+		"NationalStationID": {
+			"type": "object",
+			"description" : "Codice della stazione.",
+			"properties": {
+				"NationalStationID": {
+					"type" : "string",
+					"description" : "Codice della stazione."
+				}
+			},
+			"required": ["NationalStationID"]
+		}
+	}
+
+}

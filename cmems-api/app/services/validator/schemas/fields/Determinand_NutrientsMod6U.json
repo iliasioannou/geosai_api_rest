@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Determinand_NutrientsMod6U.json",
+	"title" : "Determinand_NutrientsMod6U Schema",
+	"description" : "Determinand_NutrientsMod6U Schema",
+
+	"definitions": {
+		"Determinand_Nutrients": {
+			"type": "object",
+			"description" : "Denominazione del parametro chimico-fisico o nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'.",
+			"properties": {
+				"Determinand_Nutrients": {
+					"type" : "string",
+					"enum" : ["Total phosphorus","Total nitrogen","Discharge flow"],
+					"description" : "Denominazione del parametro chimico-fisico o nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'."
+				}
+			},
+			"required": ["Determinand_Nutrients"]
+		}
+	}
+
+}

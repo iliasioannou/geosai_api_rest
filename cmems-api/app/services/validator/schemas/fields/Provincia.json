@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Provincia.json",
+	"title" : "Provincia Schema",
+	"description" : "Provincia Schema",
+
+	"definitions": {
+		"Provincia": {
+			"type": "object",
+			"description" : "Denominazione della spiaggia.",
+			"properties": {
+				"Provincia": {
+					"type" : "string",
+					"description" : "Denominazione della spiaggia."
+				}
+			},
+			"required": ["Provincia"]
+		}
+	}
+
+}

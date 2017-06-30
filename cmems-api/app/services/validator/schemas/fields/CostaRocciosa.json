@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CostaRocciosa.json",
+	"title" : "CostaRocciosa Schema",
+	"description" : "CostaRocciosa Schema",
+
+	"definitions": {
+		"CostaRocciosa": {
+			"type": "object",
+			"description" : "Percentuale di ricoprimento della spiaggia con costa rocciosa.",
+			"properties": {
+				"CostaRocciosa": {
+					"type" : "string",
+					"description" : "Percentuale di ricoprimento della spiaggia con costa rocciosa.",
+					"pattern" : "^100$|^\\d{0,2}(\\.\\d{1,2})? *%?$"
+				}
+			},
+			"required": ["CostaRocciosa"]
+		}
+	}
+
+}

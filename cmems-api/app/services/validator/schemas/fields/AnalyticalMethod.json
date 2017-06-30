@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AnalyticalMethod.json",
+	"title" : "AnalyticalMethod Schema",
+	"description" : "AnalyticalMethod Schema",
+
+	"definitions": {
+		"AnalyticalMethod": {
+			"type": "object",
+			"description" : "Metodica analitica.",
+			"properties": {
+				"AnalyticalMethod": {
+					"type" : "string",
+					"description" : "Metodica analitica."
+				}
+			},
+			"required": ["AnalyticalMethod"]
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Sorgente.json",
+	"title" : "Sorgente Schema",
+	"description" : "Sorgente Schema",
+
+	"definitions": {
+		"Sorgente": {
+			"type": "object",
+			"description" : "indicare quando possibile se l'oggetto/i è spiaggiato, deposto da terra o di origine indeterminata, inserire uno dei valori della lista.",
+			"properties": {
+				"Sorgente": {
+					"type" : "string",
+					"enum" : ["spiaggiato","deposto da terra","origine indeterminata"],
+					"description" : "indicare quando possibile se l'oggetto/i è spiaggiato, deposto da terra o di origine indeterminata, inserire uno dei valori della lista."
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,53 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_4/RifiutiCamp.json",
+	"title": "RifiutiCamp Schema",
+	"description": "Lista di standard per RifiutiCamp.",
+
+	"type": "object",
+	"properties": {
+
+		"RifiutiCamp": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CodiceSpiaggia.json#/definitions/CodiceSpiaggia" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/IDCategoriaRifiuto.json#/definitions/IDCategoriaRifiuto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NumeroItems.json#/definitions/NumeroItems" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Note.json#/definitions/Note" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Sorgente.json#/definitions/Sorgente" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/IDFoto.json#/definitions/IDFoto" }
+				}
+			]
+		}
+
+	}
+
+}

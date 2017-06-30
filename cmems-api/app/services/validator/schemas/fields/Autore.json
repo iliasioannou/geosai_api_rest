@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Autore.json",
+	"title" : "Autore Schema",
+	"description" : "Autore Schema",
+
+	"definitions": {
+		"Autore": {
+			"type": "object",
+			"description" : "Autore di riferimento identificazione specie. Da valorizzare nel caso in cui si utilizzi il campo NuovoTaxon.",
+			"properties": {
+				"Autore": {
+					"type" : "string",
+					"description" : "Autore di riferimento identificazione specie. Da valorizzare nel caso in cui si utilizzi il campo NuovoTaxon."
+				}
+			}
+		}
+	}
+
+}

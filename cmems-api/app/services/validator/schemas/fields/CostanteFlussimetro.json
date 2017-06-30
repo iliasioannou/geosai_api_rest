@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CostanteFlussimetro.json",
+	"title" : "CostanteFlussimetro Schema",
+	"description" : "CostanteFlussimetro Schema",
+
+	"definitions": {
+		"CostanteFlussimetro": {
+			"type": "object",
+			"description" : "Costante del flussimetro.",
+			"properties": {
+				"CostanteFlussimetro": {
+					"type" : "string",
+					"description" : "Costante del flussimetro.",
+					"pattern" : "^\\d+(\\.\\d+)?$"
+				}
+			},
+			"required": ["CostanteFlussimetro"]
+		}
+	}
+
+}

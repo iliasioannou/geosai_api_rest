@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/CountryCode.json",
+	"title" : "CountryCode Schema",
+	"description" : "CountryCode Schema",
+
+	"definitions": {
+		"CountryCode": {
+			"type": "object",
+			"description" : "Codice dello stato membro, inserire il valore 'IT' per Italia.",
+			"properties": {
+				"CountryCode": {
+					"type" : "string",
+					"enum" : ["IT"],
+					"description" : "Codice dello stato membro, inserire il valore 'IT' per Italia."
+				}
+			},
+			"required": ["CountryCode"]
+		}
+	}
+
+}

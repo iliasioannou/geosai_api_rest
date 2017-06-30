@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AccessoPedonale.json",
+	"title" : "AccessoPedonale Schema",
+	"description" : "AccessoPedonale Schema",
+
+	"definitions": {
+		"AccessoPedonale": {
+			"type": "object",
+			"description" : "Spiaggia accessibile a pedoni (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"AccessoPedonale": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia accessibile a pedoni (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["AccessoPedonale"]
+		}
+	}
+
+}

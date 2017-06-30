@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Porti.json",
+	"title" : "Porti Schema",
+	"description" : "Porti Schema",
+
+	"definitions": {
+		"Porti": {
+			"type": "object",
+			"description" : "Spiaggia limitrofa a porti (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"Porti": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia limitrofa a porti (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Porti"]
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Determinand_PhysicoChem.json",
+	"title" : "Determinand_PhysicoChem Schema",
+	"description" : "Determinand_PhysicoChem Schema",
+
+	"definitions": {
+		"Determinand_PhysicoChem": {
+			"type": "object",
+			"description" : "Denominazione del parametro chimico-fisico, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'.",
+			"properties": {
+				"Determinand_PhysicoChem": {
+					"type" : "string",
+					"enum" : ["Temperature (water)","Salinity","Secchi depth"],
+					"description" : "Denominazione del parametro chimico-fisico, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'."
+				}
+			},
+			"required": ["Determinand_PhysicoChem"]
+		}
+	}
+
+}

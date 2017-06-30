@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/StationTypeMod6A.json",
+	"title" : "StationTypeMod6A Schema",
+	"description" : "StationTypeMod6A Schema",
+
+	"definitions": {
+		"StationType": {
+			"type": "object",
+			"description" : "Tipologia della stazione, inserire uno dei valori della lista.",
+			"properties": {
+				"StationType": {
+					"type" : "string",
+					"enum" : ["SIM","SI","SC"],
+					"description" : "Tipologia della stazione, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["StationType"]
+		}
+	}
+
+}

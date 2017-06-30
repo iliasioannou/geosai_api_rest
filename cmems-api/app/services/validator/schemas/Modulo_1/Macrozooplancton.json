@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_1/Macrozooplancton.json",
+	"title": "Macrozooplancton Schema",
+	"description": "Lista di standard per Macrozooplancton.",
+
+	"type": "object",
+	"properties": {
+
+		"Macrozooplancton": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Transetto.json#/definitions/Transetto" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/TipoOsservazione.json#/definitions/TipoOsservazione" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/StatoMare.json#/definitions/StatoMare" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/ForzaVento.json#/definitions/ForzaVento" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DirezioneVento.json#/definitions/DirezioneVento" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AltreInfoMeteo.json#/definitions/AltreInfoMeteo" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CondizioniContorno.json#/definitions/CondizioniContorno" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

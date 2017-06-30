@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Note.json",
+	"title" : "Note Schema",
+	"description" : "Note Schema",
+
+	"definitions": {
+		"Note": {
+			"type": "object",
+			"description" : "indicare note relative a specifici oggetti osservati.",
+			"properties": {
+				"Note": {
+					"type" : "string",
+					"description" : "indicare note relative a specifici oggetti osservati."
+				}
+			}
+		}
+	}
+
+}

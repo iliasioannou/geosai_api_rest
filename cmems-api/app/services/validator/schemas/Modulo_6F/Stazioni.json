@@ -1,0 +1,58 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_6F/Stazioni.json",
+	"title": "Stazioni Schema",
+	"description": "Lista di standard per Stazioni.",
+
+	"type": "object",
+	"properties": {
+
+		"Stazioni": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"uniqueItems": true,
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationName.json#/definitions/NationalStationName" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Region.json#/definitions/Region" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/Point.json#/definitions/Point" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/RiverName.json#/definitions/RiverName" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/ClosestCoast.json#/definitions/ClosestCoast" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SeaDepth.json#/definitions/SeaDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Mixing.json#/definitions/Mixing" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

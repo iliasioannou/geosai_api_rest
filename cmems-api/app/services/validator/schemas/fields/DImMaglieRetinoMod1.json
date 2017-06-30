@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DImMaglieRetinoMod1.json",
+	"title" : "DImMaglieRetinoMod1 Schema",
+	"description" : "DImMaglieRetinoMod1 Schema",
+
+	"definitions": {
+		"DImMaglieRetino": {
+			"type": "object",
+			"description" : "Dimensione delle maglie del retino in millimetri. Inserire il valore '0,2'.",
+			"properties": {
+				"DImMaglieRetino": {
+					"type" : "string",
+					"description" : "Dimensione delle maglie del retino in millimetri. Inserire il valore '0,2'.",
+					"pattern" : "^0.2$"
+				}
+			},
+			"required": ["DImMaglieRetino"]
+		}
+	}
+
+}

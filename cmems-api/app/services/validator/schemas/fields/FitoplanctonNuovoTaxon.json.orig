@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/FitoplanctonNuovoTaxon.json",
+	"title" : "FitoplanctonNuovoTaxon Schema",
+	"description" : "FitoplanctonNuovoTaxon Schema",
+
+	"definitions": {
+		"NuovoTaxon": {
+			"type": "object",
+			"properties": {
+        "NuovoTaxon" : {
+          "type" : "string",
+          "not" : {
+            "$ref": "../.././app/schemas/fields/FitoplanctonTaxon.json#/definitions/Taxon/properties/Taxon"
+          },
+          "description" : "Genere specie della specie, da utilizzare nel caso la specie non sia presente nel foglio 'Lista_specie_fitoplancton'."
+        }
+			}
+		}
+	}
+
+}

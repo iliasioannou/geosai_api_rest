@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Num_cell_l.json",
+	"title" : "Num_cell_l Schema",
+	"description" : "Num_cell_l Schema",
+
+	"definitions": {
+		"Num_cell_l": {
+			"type": "object",
+			"description" : "Abbondanza della/e specie in num cell al litro.",
+			"properties": {
+				"Num_cell_l": {
+					"type" : "string",
+					"description" : "Abbondanza della/e specie in num cell al litro.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["Num_cell_l"]
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Region.json",
+	"title" : "Region Schema",
+	"description" : "Region Schema",
+
+	"definitions": {
+		"Region": {
+			"type": "object",
+			"description" : "Regione italiana cui afferisce la stazione.",
+			"properties": {
+				"Region": {
+					"type" : "string",
+					"description" : "Regione italiana cui afferisce la stazione."
+				}
+			},
+			"required": ["Region"]
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/aggregate/Point.json",
+	"title" : "Point Schema",
+	"description" : "Point Schema",
+
+	"definitions": {
+		"Point": {
+			"type": "object",
+			"properties": {
+				"Latitude": {
+					"type": "string",
+					"description": "Latitudine nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern": "^-?(?:90(?:(?:\\.0+)?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]+)?))$"
+				},
+				"Longitude": {
+					"type": "string",
+					"description": "Longitudine nel sistema di riferimento WGS84 gradi decimali.",
+					"pattern": "^-?(?:180(?:(?:\\.0+)?)|(?:[0-9]|[1-9][0-9]|1[1-7][0-9])(?:(?:\\.[0-9]+)?))$"
+				}
+			},
+			"required": ["Latitude","Longitude"]
+		}
+	}
+
+}

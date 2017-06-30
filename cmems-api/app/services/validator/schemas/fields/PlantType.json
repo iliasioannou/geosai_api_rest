@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/PlantType.json",
+	"title" : "PlantType Schema",
+	"description" : "PlantType Schema",
+
+	"definitions": {
+		"PlantType": {
+			"type": "object",
+			"description" : "Denominazione del porto.",
+			"properties": {
+				"PlantType": {
+					"type" : "string",
+					"enum" : ["impianto di piscicoltura","piattaforma off-shore HERA LACINIA BEAF: Estrazione di Gas","piattaforma off-shore VegaA: Estrazione petrolio","piattaforma off-shore Prezioso: Estrazione di Olio","piattaforma Off-Shore: Estrazione di Gas","impianto allevamento di mitilicoltura ","piattaforma Off-Shore: estrazione gas metano","Area di riferimento, centro Golfo","piattaforma Off-Shore: Estrazione di Olio","piattaforma Off-Shore: Estrazione e reiniezione di idrocarburi","impianto di acquacoltura offshore"],
+					"description" : "Denominazione del porto."
+				}
+			},
+			"required": ["PlantType"]
+		}
+	}
+
+}

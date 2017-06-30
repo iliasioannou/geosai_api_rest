@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TipoOsservazione.json",
+	"title" : "TipoOsservazione Schema",
+	"description" : "TipoOsservazione Schema",
+
+	"definitions": {
+		"TipoOsservazione": {
+			"type": "object",
+			"description" : "Tiplogia di osservazione, inserire il valore 'navigazione'.",
+			"properties": {
+				"TipoOsservazione": {
+					"type" : "string",
+					"description" : "Tiplogia di osservazione, inserire il valore 'navigazione'.",
+					"pattern" : "^navigazione$"
+				}
+			},
+			"required": ["TipoOsservazione"]
+		}
+	}
+
+}

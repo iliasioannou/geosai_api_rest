@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Remarks.json",
+	"title" : "Remarks Schema",
+	"description" : "Remarks Schema",
+
+	"definitions": {
+		"Remarks": {
+			"type": "object",
+			"description": "Note.",
+			"properties": {
+				"Remarks": {
+					"type": "string",
+					"description": "Note."
+				}
+			}
+		}
+	}
+
+}

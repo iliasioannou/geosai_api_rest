@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Temp.json",
+	"title" : "Temp Schema",
+	"description" : "Temp Schema",
+
+	"definitions": {
+		"Temp": {
+			"type": "object",
+			"description" : "Profondità di prelievo del campione in metri.",
+			"properties": {
+				"Temp": {
+					"type" : "string",
+					"description" : "Profondità di prelievo del campione in metri.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["Temp"]
+		}
+	}
+
+}

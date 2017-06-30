@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Colore.json",
+	"title" : "Colore Schema",
+	"description" : "Colore Schema",
+
+	"definitions": {
+		"Colore": {
+			"type": "object",
+			"description" : "Colore delle microplastiche, inserire uno dei valori della lista.",
+			"properties": {
+				"Colore": {
+					"type" : "string",
+					"enum" : ["bianche","nere","rosse","blu","verdi","trasparenti","altro colore"],
+					"description" : "Colore delle microplastiche, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Colore"]
+		}
+	}
+
+}

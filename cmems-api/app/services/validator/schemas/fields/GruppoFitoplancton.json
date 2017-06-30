@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/GruppoFitoplancton.json",
+	"title" : "GruppoFitoplancton Schema",
+	"description" : "GruppoFitoplancton Schema",
+
+	"definitions": {
+		"Gruppo": {
+			"type": "object",
+			"description" : "Gruppo di appartenenza della/e specie, inserire uno dei valori della lista.",
+			"properties": {
+				"Gruppo": {
+					"type" : "string",
+          "enum" : ["Diatomee","Dinoflagellate","Altro_fitoplancton"],
+          "description" : "Gruppo di appartenenza della/e specie, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["Gruppo"]
+		}
+	}
+
+}

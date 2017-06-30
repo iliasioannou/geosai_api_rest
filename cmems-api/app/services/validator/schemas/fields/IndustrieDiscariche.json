@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/IndustrieDiscariche.json",
+	"title" : "IndustrieDiscariche Schema",
+	"description" : "IndustrieDiscariche Schema",
+
+	"definitions": {
+		"IndustrieDiscariche": {
+			"type": "object",
+			"description" : "Spiaggia limitrofa a siti industriali/discariche (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"IndustrieDiscariche": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia limitrofa a siti industriali/discariche (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["IndustrieDiscariche"]
+		}
+	}
+
+}

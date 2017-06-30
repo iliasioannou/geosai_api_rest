@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Ampiezza.json",
+	"title" : "Ampiezza Schema",
+	"description" : "Ampiezza Schema",
+
+	"definitions": {
+		"Ampiezza": {
+			"type": "object",
+			"description" : "Ampiezza media della spiaggia (m).",
+			"properties": {
+				"Ampiezza": {
+					"type" : "string",
+					"description" : "Ampiezza media della spiaggia (m).",
+					"pattern" : "^\\d+(\\.\\d+)?$"
+				}
+			},
+			"required": ["Ampiezza"]
+		}
+	}
+
+}

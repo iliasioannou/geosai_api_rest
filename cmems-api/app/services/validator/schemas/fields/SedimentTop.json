@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/SedimentTop.json",
+	"title" : "SedimentTop Schema",
+	"description" : "SedimentTop Schema",
+
+	"definitions": {
+		"SedimentTop": {
+			"type": "object",
+			"description" : "Per la matrice sedimento: Distanza tra il limite superiore del sedimento analizzato e la superificie dei sedimenti in cm. Nel caso il limite superiore coincida con la superficie dei sedimenti, inserire il valore '0'.",
+			"properties": {
+				"SedimentTop": {
+					"type" : "string",
+					"description" : "Per la matrice sedimento: Distanza tra il limite superiore del sedimento analizzato e la superificie dei sedimenti in cm. Nel caso il limite superiore coincida con la superficie dei sedimenti, inserire il valore '0'.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			}
+		}
+	}
+
+}

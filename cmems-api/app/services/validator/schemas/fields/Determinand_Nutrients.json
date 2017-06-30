@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Determinand_Nutrients.json",
+	"title" : "Determinand_Nutrients Schema",
+	"description" : "Determinand_Nutrients Schema",
+
+	"definitions": {
+		"Determinand_Nutrients": {
+			"type": "object",
+			"description" : "Denominazione del parametro chimico-fisico o nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'.",
+			"properties": {
+				"Determinand_Nutrients": {
+					"type" : "string",
+					"enum" : ["Temperature (water)","Salinity","Electrical conductivity","Dissolved oxygen","Oxygen saturation","pH","Chlorophyll a","Secchi depth","Nitrate","Nitrite","Ammonium","Total phosphorus","Orthophosphates","Total nitrogen","Silicate"],
+					"description" : "Denominazione del parametro chimico-fisico o nutriente, inserire uno dei valori della lista presente nel foglio 'Lista_parametri_Chimico-Fisici'."
+				}
+			},
+			"required": ["Determinand_Nutrients"]
+		}
+	}
+
+}

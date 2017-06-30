@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Abbondanza_CD.json",
+	"title" : "Abbondanza_CD Schema",
+	"description" : "Abbondanza_CD Schema",
+
+	"definitions": {
+		"Abbondanza_CD": {
+			"type": "object",
+			"description" : "Abbondanza della classe dimensionale indicata in num cell al litro o individui al metro cubo.",
+			"properties": {
+				"Abbondanza_CD": {
+					"type" : "string",
+					"description" : "Abbondanza della classe dimensionale indicata in num cell al litro o individui al metro cubo.",
+					"pattern" : "[-+]?((\\.[0-9]+|[0-9]+\\.[0-9]+)([eE][-+][0-9]+)?|[0-9]+)"
+				}
+			},
+			"required": ["Abbondanza_CD"]
+		}
+	}
+
+}

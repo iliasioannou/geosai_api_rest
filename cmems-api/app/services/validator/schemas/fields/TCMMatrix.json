@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/TCMMatrix.json",
+	"title" : "TCMMatrix Schema",
+	"description" : "TCMMatrix Schema",
+
+	"definitions": {
+		"TCMMatrix": {
+			"type": "object",
+			"description": "Matrici ambientali misurati nella stazione, inserire uno dei valori della lista.",
+			"properties": {
+				"TCMMatrix": {
+					"type": "string",
+					"enum": ["B","BS","BSW","BW","S","SW","W"],
+					"description": "Matrici ambientali misurati nella stazione, inserire uno dei valori della lista."
+				}
+			},
+			"required": ["TCMMatrix"]
+		}
+	}
+
+}

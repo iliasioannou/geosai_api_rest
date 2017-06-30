@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/InformazioniUtilizzate.json",
+	"title" : "InformazioniUtilizzate Schema",
+	"description" : "InformazioniUtilizzate Schema",
+
+	"definitions": {
+		"InformazioniUtilizzate": {
+			"type": "object",
+			"description" : "Descrizione delle informazioni utilizzate per il posizionamento delle stazioni (ad es. caratteristiche del traffico portuale, condizioni idrodinamiche, etc..).",
+			"properties": {
+				"InformazioniUtilizzate": {
+					"type" : "string",
+					"description" : "Descrizione delle informazioni utilizzate per il posizionamento delle stazioni (ad es. caratteristiche del traffico portuale, condizioni idrodinamiche, etc..)."
+				}
+			},
+			"required": ["InformazioniUtilizzate"]
+		}
+	}
+
+}

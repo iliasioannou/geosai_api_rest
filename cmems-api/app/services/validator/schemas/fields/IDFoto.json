@@ -1,0 +1,20 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/IDFoto.json",
+	"title" : "IDFoto Schema",
+	"description" : "IDFoto Schema",
+
+	"definitions": {
+		"IDFoto": {
+			"type": "object",
+			"description" : "indicare note relative a specifici oggetti osservati.",
+			"properties": {
+				"IDFoto": {
+					"type" : "string",
+					"description" : "indicare note relative a specifici oggetti osservati."
+				}
+			}
+		}
+	}
+
+}

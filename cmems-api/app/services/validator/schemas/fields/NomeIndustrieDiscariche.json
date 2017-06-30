@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/NomeIndustrieDiscariche.json",
+	"title" : "NomeIndustrieDiscariche Schema",
+	"description" : "NomeIndustrieDiscariche Schema",
+
+	"definitions": {
+		"NomeIndustrieDiscariche": {
+			"type": "object",
+			"description" : "Inserire il nome dei siti più vicini.",
+			"properties": {
+				"NomeIndustrieDiscariche": {
+					"type" : "string",
+					"description" : "Inserire il nome dei siti più vicini."
+				}
+			},
+			"required": ["NomeIndustrieDiscariche"]
+		}
+	}
+
+}

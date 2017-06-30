@@ -1,0 +1,73 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_6F/Chimico-fisici.json",
+	"title": "Chimico-fisici Schema",
+	"description": "Lista di standard per Chimico-fisici.",
+
+	"type": "object",
+	"properties": {
+
+		"Chimico-fisici": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/MatrixMod6F.json#/definitions/Matrix" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Determinand_NutrientsMod6F.json#/definitions/Determinand_Nutrients" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Unit_NutrientsSeawaterMod6F.json#/definitions/Unit_NutrientsSeawater" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/LOD_LOQ_Flag.json#/definitions/LOD_LOQ_Flag" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Concentration.json#/definitions/Concentration" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Method_Chl-a.json#/definitions/Method_Chl-a" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/LOQ.json#/definitions/LOQ" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/EmodnetCodeP01.json#/definitions/EmodnetCodeP01" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

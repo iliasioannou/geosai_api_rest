@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_3/Modulo_3_12-05-2016.json",
+	"title" : "Modulo_3_12-05-2016.xls",
+	"description" : "Lista di standard per il Modulo_3_12-05-2016.",
+
+	"type" : "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./app/schemas/Modulo_3/Stazioni.json#/properties/Stazioni" },
+		"Chimico-fisici": { "$ref": "./app/schemas/Modulo_3/Chimico-fisici.json#/properties/Chimico-fisici" },
+		"Fitoplancton_ret": { "$ref": "./app/schemas/Modulo_3/Fitoplancton_ret.json#/properties/Fitoplancton_ret" },
+		"Fitoplancton_niskin": { "$ref": "./app/schemas/Modulo_3/Fitoplancton_niskin.json#/properties/Fitoplancton_niskin" },
+		"Mesozooplancton_ret": { "$ref": "./app/schemas/Modulo_3/Mesozooplancton_ret.json#/properties/Mesozooplancton_ret" }
+
+	}
+
+}

@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/Salinity.json",
+	"title" : "Salinity Schema",
+	"description" : "Salinity Schema",
+
+	"definitions": {
+		"Salinity": {
+			"type": "object",
+			"description" : "Per matrice acqua: Salinità (psu).",
+			"properties": {
+				"Salinity": {
+					"type" : "string",
+					"description" : "Per matrice acqua: Salinità (psu).",
+					"pattern" : "^(\\d(\\.\\d+)?|[0-4]\\d(\\.\\d+)?|50)$"
+				}
+			}
+		}
+	}
+
+}

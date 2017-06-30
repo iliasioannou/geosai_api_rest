@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/DeterminandHazSubsName.json",
+	"title" : "DeterminandHazSubsName Schema",
+	"description" : "DeterminandHazSubsName Schema",
+
+	"definitions": {
+		"DeterminandHazSubsName": {
+			"type": "object",
+			"description" : "Denominazione della sostanza contaminante, inserire uno dei valori della lista presente nel foglio 'Lista_contaminanti_acqua'.",
+			"properties": {
+				"DeterminandHazSubsName": {
+					"type" : "string",
+					"enum" : ["Alachlor","Chloroalkanes C10-13","Aldrin","Dieldrin","Endrin","Isodrin","Anthracene","Atrazine","Benzene","Cadmium","Chlorfenvinphos","Chlorpyrifos","DDT total","DDT, p,p'","1,2-dichloroethane","Dichloromethane","Di (2-ethylhexyl) phthalate (DEHP)","Diphenyl ether, pentabromo derivative","Diuron","Endosulfan","Hexachlorobenzene (HCB)","Hexachlorobutadiene (HCBD)","Hexachlorocyclohexane (HCH)","Fluoranthene","Benzo(a)pyrene","Benzo(b)fluoranthene","Benzo(g,h,i)perylene","Benzo(k)fluoranthene","Indeno(1,2,3-cd)pyrene","Isoproturon","Mercury","Naphthalene","Nickel","4-nonylphenol, branched","Para-tert-octylphenol","Pentachlorobenzene","Pentachlorophenol","Lead","Simazine","Tetrachloromethane","1,1,2,2-tetrachloroethene","1,1,2-trichloroethene","Tributyltin cation","1,2,3-trichlorobenzene","1,2,4-trichlorobenzene","1,3,5-trichlorobenzene","Trichloromethane","Trifluralin"],
+					"description" : "Denominazione della sostanza contaminante, inserire uno dei valori della lista presente nel foglio 'Lista_contaminanti_acqua'."
+				}
+			},
+			"required": ["DeterminandHazSubsName"]
+		}
+	}
+
+}

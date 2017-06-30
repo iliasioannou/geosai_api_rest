@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/ForzaVento.json",
+	"title" : "ForzaVento Schema",
+	"description" : "ForzaVento Schema",
+
+	"definitions": {
+		"ForzaVento": {
+			"type": "object",
+			"description" : "Forza del vento secondo la scala di Beaufort da 0 a 12 gradi.",
+			"properties": {
+				"ForzaVento": {
+					"type" : "string",
+					"description" : "Forza del vento secondo la scala di Beaufort da 0 a 12 gradi.",
+					"pattern" : "^(\\d(\\.\\d+)?|1[0-1](\\.\\d+)?|12)$"
+				}
+			},
+			"required": ["ForzaVento"]
+		}
+	}
+
+}

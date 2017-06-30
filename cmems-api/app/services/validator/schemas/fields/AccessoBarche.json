@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/AccessoBarche.json",
+	"title" : "AccessoBarche Schema",
+	"description" : "AccessoBarche Schema",
+
+	"definitions": {
+		"AccessoBarche": {
+			"type": "object",
+			"description" : "Spiaggia accessibile a barche (Si/No), inserire uno dei valori della lista.",
+			"properties": {
+				"AccessoBarche": {
+					"type" : "string",
+					"enum" : ["Y","N"],
+					"description" : "Spiaggia accessibile a barche (Si/No), inserire uno dei valori della lista."
+				}
+			},
+			"required": ["AccessoBarche"]
+		}
+	}
+
+}

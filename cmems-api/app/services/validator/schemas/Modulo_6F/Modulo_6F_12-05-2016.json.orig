@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_6F/Modulo_6F_12-05-2016.json",
+	"title" : "Modulo_6F_12-05-2016.xls",
+	"description" : "Lista di standard per Modulo_6F_12-05-2016.",
+
+	"type" : "object",
+	"properties": {
+
+		"Stazioni": { "$ref": "./app/schemas/Modulo_6F/Stazioni.json#/properties/Stazioni" },
+		"Chimico-fisici": { "$ref": "./app/schemas/Modulo_6F/Chimico-fisici.json#/properties/Chimico-fisici" }
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/PortName.json",
+	"title" : "PortName Schema",
+	"description" : "PortName Schema",
+
+	"definitions": {
+		"PortName": {
+			"type": "object",
+			"description" : "Denominazione del porto.",
+			"properties": {
+				"PortName": {
+					"type" : "string",
+					"description" : "Denominazione del porto."
+				}
+			},
+			"required": ["PortName"]
+		}
+	}
+
+}

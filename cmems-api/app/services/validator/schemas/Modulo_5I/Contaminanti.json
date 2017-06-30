@@ -1,0 +1,105 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/Modulo_5I/Contaminanti.json",
+	"title": "Contaminanti Schema",
+	"description": "Lista di standard per Contaminanti.",
+
+	"type": "object",
+	"properties": {
+
+		"Contaminanti": {
+			"allOf": [
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CountryCode.json#/definitions/CountryCode" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/NationalStationID.json#/definitions/NationalStationID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../aggregate/DateTime.json#/definitions/DateTime" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleID.json#/definitions/SampleID" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Matrix.json#/definitions/Matrix" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/DeterminandHazSubsName.json#/definitions/DeterminandHazSubsName" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/CASNumber.json#/definitions/CASNumber" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Unit_HazSubs.json#/definitions/Unit_HazSubs" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/LOD_LOQ_Flag.json#/definitions/LOD_LOQ_Flag" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Concentration.json#/definitions/Concentration" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SampleDepth.json#/definitions/SampleDepth" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/GrainType.json#/definitions/GrainType" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Fraction.json#/definitions/Fraction" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SedimentTop.json#/definitions/SedimentTop" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/SedimentBottom.json#/definitions/SedimentBottom" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Species.json#/definitions/Species" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Tissue.json#/definitions/Tissue" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/AnalyticalMethod.json#/definitions/AnalyticalMethod" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/LOQ.json#/definitions/LOQ" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Basis.json#/definitions/Basis" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/EmodnetCodeP01.json#/definitions/EmodnetCodeP01" }
+				},
+				{
+					"type": "array",
+					"items": { "$ref": "../fields/Remarks.json#/definitions/Remarks" }
+				}
+			]
+		}
+
+	}
+
+}

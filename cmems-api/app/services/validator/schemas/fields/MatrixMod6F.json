@@ -1,0 +1,22 @@
+{
+	"$schema" : "http://json-schema.org/draft-04/schema#",
+	"id" : "./app/schemas/fields/MatrixMod6F.json",
+	"title" : "MatrixMod6F Schema",
+	"description" : "MatrixMod6F Schema",
+
+	"definitions": {
+		"Matrix": {
+			"type": "object",
+			"description" : "Matrice del campione, inserire il valore 'W'.",
+			"properties": {
+				"Matrix": {
+					"type" : "string",
+					"enum" : ["W"],
+					"description" : "Matrice del campione, inserire il valore 'W'."
+				}
+			},
+			"required": ["Matrix"]
+		}
+	}
+
+}
