@@ -297,10 +297,6 @@ const routes = function(server) {
             "username": username,
             "password": inputJson.password,
             "idRole": inputJson.idRole || null,
-            "idAmp": inputJson.idAmp || null,
-            "idCnr": inputJson.idCnr || null,
-            "idArpa": inputJson.idArpa || null,
-            "idOrganizationType": inputJson.idOrganizationType || null,
             "active": inputJson.active || "1",
             "note": inputJson.note || null,
         };
