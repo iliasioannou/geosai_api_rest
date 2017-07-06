@@ -4,7 +4,7 @@ ARG branch
 
 RUN git clone -b $branch https://teamEreticoTfs:vAsK*AIJFB@tfs.planetek.it/SBU-GS/pkz029_UU_CMEMS/_git/pkz029_UU_CMEMS_Api_Rest
 WORKDIR pkz029_UU_CMEMS_Api_Rest/cmems-api
-RUN start.sh
+RUN npm install --no-bin-links && grunt apidoc && grunt
 WORKDIR dist
 
 EXPOSE 3000
