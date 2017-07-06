@@ -10,7 +10,7 @@ var moment = require("moment");
 // store the tokens map
 var database = {
     clients: {
-        ispraClient: { secret: "INsb0skEFM" },
+        cmemsClient: { secret: "INsb0skEFM" },
     },
     tokensToUsernames: {}
 };
@@ -38,7 +38,7 @@ exports.validateClient = function (credentials, req, cb) {
 
 /**
 Check provided user credentials.
-If they're correct, create and return the auth token. 
+If they're correct, create and return the auth token.
 Otherwise, mark the auth flow as failed.
 **/
 exports.grantUserToken = function (credentials, req, cb) {
@@ -59,7 +59,7 @@ exports.grantUserToken = function (credentials, req, cb) {
 };
 
 /**
-Authenticate provided token. 
+Authenticate provided token.
 This methods looks up the token in the tokens map
 and authenticate the client if provided token is found;
 otherwise the auth fail.
@@ -73,7 +73,7 @@ exports.authenticateToken = function (token, req, cb) {
         console.log("NOW ", moment());
         console.log(moment().isBefore(userData.expireTime));
         if(moment().isBefore(userData.expireTime)){
-            req.username = userData.username;    
+            req.username = userData.username;
             return cb(null, true);
         }
     }

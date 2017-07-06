@@ -9,20 +9,20 @@ Autenticazione
 
 - Autenticarsi (la durata del token è di due ore)
 
-    ```curl -vu ispraClient:INsb0skEFM -X POST -F "clientId=ispraClient" -F "clientSecret=INsb0skEFM" -F "grant_type=password" -F "username=ispra" -F "password=ispra123" http://localhost:3000/api/v1.0.0/oauth/token```
+    ```curl -vu cmemsClient:INsb0skEFM -X POST -F "clientId=cmemsClient" -F "clientSecret=INsb0skEFM" -F "grant_type=password" -F "username=ispra" -F "password=ispra123" http://localhost:3000/api/v1.0.0/oauth/token```
 
 
 - Log out
-    
+
     ```
     curl -H "Authorization: Bearer 1nRW+8pgOTKuETzxqp5QrCppqwW7FQHHI8J4TXzOSpw=" http://localhost:3000/api/v1.0.0/oauth/logout
     ```
 
 - Richieste autenticate
-	
+
 	```
     curl -H "Authorization: Bearer 1nRW+8pgOTKuETzxqp5QrCppqwW7FQHHI8J4TXzOSpw=" http://localhost:3000/api/v1.0.0/oauth/users
-    ```	
+    ```
 
 
 Le API REST fanno uso delle seguenti librerie:
@@ -164,5 +164,3 @@ Serve a creare un chiave private ed un certificato che serviranno per la generaz
 		openssl x509 -req -in ssl/server/certificateRequest-kim.planetek.it.csr -out ssl/server/certificate-kim.planetek.it.crt -sha1 -CA ssl/ca/certificate-CA.crt -CAkey ssl/ca/privateKey-CA.key -CAcreateserial -days 2190 -passin pass:pke114
 
 		openssl x509 -req -in ssl/server/certificateRequest-metis.planetek.it.csr -out ssl/server/certificate-metis.planetek.it.crt -sha1 -CA ssl/ca/certificate-CA.crt -CAkey ssl/ca/privateKey-CA.key -CAcreateserial -days 2190 -passin pass:pke114
-
-

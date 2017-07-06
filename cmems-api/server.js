@@ -40,7 +40,7 @@ https_options.certificate = fs.readFileSync("./app/ssl/server/certificate-localh
 var server_https = restify.createServer(https_options);
 
 var RESOURCES = Object.freeze({
-    TOKEN: "/oauth/token",    
+    TOKEN: "/oauth/token",
 });
 
 var setup_server = function(server) {
@@ -91,11 +91,11 @@ var setup_server = function(server) {
     //server.pre(restify.CORS());
 
     logger.log.info("Configure API routes");
-    
+
     // inject oauth2 endpoints
-    restifyOAuth2.ropc(server, { 
+    restifyOAuth2.ropc(server, {
         tokenEndpoint: '/oauth/token',
-        tokenExpirationTime: 60*60*2,
+        tokenExpirationTime: 60*60*8,
         hooks: hooks});
 
     require("./app/routes/routes.js")(server);

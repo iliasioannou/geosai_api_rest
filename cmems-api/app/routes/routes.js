@@ -31,7 +31,8 @@ var routes = function(server) {
     console.log("\tConfigure Auth routes");
     require("./auth.js")(server);
 
-
+    console.log("\tConfigure Processing routes");
+    require("./processings.js")(server);
 
 }
 
