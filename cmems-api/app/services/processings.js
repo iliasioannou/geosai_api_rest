@@ -8,8 +8,8 @@ let logMetadata = {
     module: "services.processing",
     method: ""
 };
-
-
+let apiProcessingConfig = require("../config/apiProcessingConfig.js");
+let host = apiProcessingConfig.host + "/processings";
 
 /**
  * Add processing
@@ -22,7 +22,7 @@ let addProcessing = function(processingParams) {
     return new Promise(function(resolve, reject) {
 
       var options = {
-        uri: 'http://temisto.planetek.it:9999/processings',
+        uri: host,
         method: 'POST',
         json: processingParams
       };
