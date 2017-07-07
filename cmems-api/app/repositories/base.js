@@ -2,6 +2,7 @@
 let dbConfig = require("../config/dbConfig.js");
 let knex = require("knex")(dbConfig);
 let bookshelf = require("bookshelf")(knex);
+let apiProcessingConfig = require("../config/apiProcessingConfig.js");
 
 // Pass an initialized bookshelf instance
 let modelBase = require("bookshelf-modelbase")(bookshelf);
