@@ -93,6 +93,7 @@ const routes = function(server) {
                           serviceProcessings.addProcessing(processingParams)
                               .then(function(response){
                                 var message = '';
+                                logger.log.debug(JSON.stringify(response), logMetadata);
                                 switch(response.statusCode){
                                     case 201:
                                     message = 'Processing taken in charge.';
@@ -101,7 +102,7 @@ const routes = function(server) {
                                     message = 'Please check your request parameters.'
                                     break;
                                     case 409:
-                                    message = response.message.join('\n');
+                                    message = response.body.error.join('\n');
                                     break;
                                     default:
                                     message = 'Unexpected error.';
