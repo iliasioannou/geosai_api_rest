@@ -26,9 +26,13 @@ let addProcessing = function(processingParams) {
         method: 'POST',
         json: processingParams
       };
+
+      logger.log.debug("Options: " + options);
+
       request(options, function (error, response, body) {
         logger.log.debug("Error: " + error);
         logger.log.debug("Response: " + response);
+        ogger.log.debug("Body: " + body);
         if (!error && response.statusCode == 201) {
           resolve(true);
         } else {
