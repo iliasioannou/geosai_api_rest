@@ -21,8 +21,8 @@ let addProcessing = function(processingParams) {
 
     return new Promise(function(resolve, reject) {
 
-      processingParams.products = processingParams.product;
-      delete processingParams.product;
+      processingParams.processingInputData.products = processingParams.processingInputData.product;
+      delete processingParams.processingInputData.product;
 
       var options = {
         uri: host,
