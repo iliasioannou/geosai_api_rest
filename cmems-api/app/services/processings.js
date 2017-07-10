@@ -30,12 +30,12 @@ let addProcessing = function(processingParams) {
         json: processingParams
       };
 
-      logger.log.debug("Options: " + options);
+      logger.log.debug("Options: " + JSON.stringify(options));
 
       request(options, function (error, response, body) {
-        logger.log.debug("Error: " + error);
-        logger.log.debug("Response: " + response);
-        ogger.log.debug("Body: " + body);
+        logger.log.debug("Error: " + JSON.stringify(error));
+        logger.log.debug("Response: " + JSON.stringify(response));
+        logger.log.debug("Body: " + JSON.stringify(body));
         if (!error && response.statusCode == 201) {
           resolve(true);
         } else {
