@@ -27,7 +27,8 @@ let addProcessing = function(processingParams) {
         json: processingParams
       };
       request(options, function (error, response, body) {
-
+        logger.log.debug("Error: " + error);
+        logger.log.debug("Response: " + response);
         if (!error && response.statusCode == 201) {
           resolve(true);
         } else {
