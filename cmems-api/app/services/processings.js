@@ -21,9 +21,6 @@ let addProcessing = function(processingParams) {
 
     return new Promise(function(resolve, reject) {
 
-      processingParams.processingInputData.products = processingParams.processingInputData.product;
-      delete processingParams.processingInputData.product;
-
       var options = {
         uri: host,
         method: 'POST',
@@ -36,8 +33,8 @@ let addProcessing = function(processingParams) {
         logger.log.debug("Error: " + JSON.stringify(error));
         logger.log.debug("Response: " + JSON.stringify(response));
         logger.log.debug("Body: " + JSON.stringify(body));
-        if (!error && response.statusCode == 201) {
-          resolve(true);
+        if (!error) {
+          resolve(response);
         } else {
           reject(error);
         }

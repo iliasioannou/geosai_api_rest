@@ -91,9 +91,24 @@ const routes = function(server) {
                           };
 
                           serviceProcessings.addProcessing(processingParams)
-                              .then(function(done){
+                              .then(function(response){
                                 if(done){
-                                  res.send(done);
+                                  var message = '';
+                                  switch(response.statusCode){
+                                      case 201:
+                                        message = 'Processing taken in charge.';
+                                        break;
+                                      case 400:
+                                        message = 'Please check your request parameters.'
+                                        break;
+                                      case 409:
+                                        message = response.message.join('\n');
+                                        break;
+                                      default:
+                                        message = 'Unexpected error.';
+                                        break;
+                                  }
+                                  res.send(response.statusCode, message);
                                 }
                               })
                               .catch(function(error){
