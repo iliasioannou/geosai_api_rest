@@ -27,13 +27,14 @@ let addProcessing = function(processingParams) {
         json: processingParams
       };
 
-      logger.log.debug("Request options: " + options);
+      logger.log.debug("Options: " + JSON.stringify(options));
+
       request(options, function (error, response, body) {
-        logger.log.debug("Error: " + error);
-        logger.log.debug("Response: " + response);
-        logger.log.debug("Body: " + body);
-        if (!error && response.statusCode == 201) {
-          resolve(true);
+        logger.log.debug("Error: " + JSON.stringify(error));
+        logger.log.debug("Response: " + JSON.stringify(response));
+        logger.log.debug("Body: " + JSON.stringify(body));
+        if (!error) {
+          resolve(response);
         } else {
           reject(error);
         }
