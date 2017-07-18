@@ -28,7 +28,6 @@ let addProcessing = function(processingParams) {
       };
 
       logger.log.debug("Request options: " + options);
-
       request(options, function (error, response, body) {
         logger.log.debug("Error: " + error);
         logger.log.debug("Response: " + response);
