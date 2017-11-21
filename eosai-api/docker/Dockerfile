@@ -4,7 +4,7 @@ LABEL maintainer.name="ilias ioannou" \
 	  
 ARG branch
 
-RUN git clone -b $branch https://tfs.planetek.it/Planetek%20Hellas/pkh111_EOSAI/_git/pkh111_EOSAI_Api_Rest
+RUN git clone -b $branch https://teamEreticoTfs:vAsK*AIJFB@tfs.planetek.it/Planetek%20Hellas/pkh111_EOSAI/_git/pkh111_EOSAI_Api_Rest
 WORKDIR pkh111_EOSAI_Api_Rest/eosai-api
 RUN npm install --no-bin-links && grunt apidoc && grunt prod
 WORKDIR dist
