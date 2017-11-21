@@ -1,4 +1,4 @@
-#CMEMS API REST
+#EOSAI API REST
 
 sudo npm install -g grunt
 sudo npm install -g grunt-cli
