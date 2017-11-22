@@ -1,9 +1,9 @@
 {
 	"database": {
-		"host": "postgres-cmems",
-		"name": "CMEMS_DB",
-		"user": "cmems",
-		"password": "cmems"
+		"host": "postgres-eosai",
+		"name": "EOSAI_DB",
+		"user": "eosai",
+		"password": "eosai"
 	},
 	"server": {
 		"name": "<%= pkg.name %>",
